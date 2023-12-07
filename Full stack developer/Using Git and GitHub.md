@@ -34,6 +34,7 @@ git remote add (origin) ( https://github.com/vafekt/kolejnet.git): interacting w
 git push -u (origin) (master): pushing code to the repository on the Internet
 gitk: shows the graphical result
 git pull: when you have changes in remote repository but still do not update in the local repository. It is used to have update.
+git request-pull: to create a summary of changes for upstream to pull
 git fetch: transfers any changes from remote repository to the local one.
 ![[Pasted image 20231207225106.png]]
 "origin" word means the shorthand for the remote repository's URL
@@ -83,4 +84,8 @@ When to fork or clone?
 - if you have access to a project repo, e.g., as part of a team developing a codebase collaboratively, you can clone the repo and synchronize changes from your local copy of the repo using pull and push.
 - If, however, there is a public project that you want to contribute to but do not have write access to, or use a public project as a starting point for your own project, you can fork the project.
 - The project that you fork from is referred to as the `upstream` project
-- 
+
+3 roles in Git
+- Developer
+- Integrator: Receives changes made by others, reviews and responds to pull-requests
+- Administrator: structures repository organization
