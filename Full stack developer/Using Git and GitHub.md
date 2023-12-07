@@ -18,15 +18,25 @@ Fork: Copy of repository
 Pull request: The process used to request that someone reviews and approves your changes before they become final
 
 **Basic Git Commands**
-git init: initializing new repository, or cloning an existing repository
-git add: moving changes from the working directory to the staging area
+git clone: Installs the repository from GitHub to local machine
+git init: initializing new repository
+git add (-A): moving changes from the working directory to the staging area
 git status: allows you to see the state your working directory and the staged snapshot of changes.
-git commit: takes you staged snapshot of changes and commits them to the project
+git commit (-a): takes you staged snapshot of changes and commits them to the project
 git reset: undoes changes that you've made to the files in your working directory
 git log: enables to browse previous changes to a project
 git branch: creates an isolated environment within the repository to make changes
 git checkout: lets you see and change existing branches
 git merge: lets you put everything back together again
+git switch: changes to the specified branch
+git branch -d: deletes the specified branch
+git remote add (origin) ( https://github.com/vafekt/kolejnet.git): interacting with the repository in GitHub (used for pushing code into the repository)
+git push -u (origin) (master): pushing code to the repository on the Internet
+gitk: shows the graphical result
+git pull: when you have changes in remote repository but still do not update in the local repository. It is used to have update.
+git fetch: transfers any changes from remote repository to the local one.
+![[Pasted image 20231207225106.png]]
+"origin" word means the shorthand for the remote repository's URL
 
 **Exploring the repository**
 ![[Pasted image 20231207143820.png]]
@@ -64,3 +74,13 @@ What we do is to make sure that the master branch should be the only deployed co
 - The approved code is merged back into the master code
 ![[Pasted image 20231207164329.png]]
 
+**Cloning and Forking projects**
+Cloning creates a copy of a repository on your local machine
+Forking allows you to modify or extend a project without affecting the original project
+- Forking takes a copy of a GitHub repository to use it as the base for a new project
+- You can submit changes back to the original repository
+When to fork or clone?
+- if you have access to a project repo, e.g., as part of a team developing a codebase collaboratively, you can clone the repo and synchronize changes from your local copy of the repo using pull and push.
+- If, however, there is a public project that you want to contribute to but do not have write access to, or use a public project as a starting point for your own project, you can fork the project.
+- The project that you fork from is referred to as the `upstream` project
+- 
