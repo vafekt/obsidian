@@ -35,6 +35,7 @@ git push -u (origin) (master): pushing code to the repository on the Internet
 gitk: shows the graphical result
 git pull: when you have changes in remote repository but still do not update in the local repository. It is used to have update.
 git request-pull: to create a summary of changes for upstream to pull
+git-daemon: a repository administrator use to allow anonymous downloads from the repository
 git fetch: transfers any changes from remote repository to the local one.
 ![[Pasted image 20231207225106.png]]
 "origin" word means the shorthand for the remote repository's URL
