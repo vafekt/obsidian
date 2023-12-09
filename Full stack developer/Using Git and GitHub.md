@@ -90,3 +90,10 @@ When to fork or clone?
 - Developer
 - Integrator: Receives changes made by others, reviews and responds to pull-requests
 - Administrator: structures repository organization
+
+Code of conduct: A code of conduct helps set the ground rules for the behavior of your project's participants. It defines standards for how to engage in a community.
+GitHub provides templates for common codes of conduct to help you quickly add one to your project. You define a file named CODE_OF_CONDUCT.md in the root folder of the repository.
+![[Pasted image 20231208202934.png]]
+
+The contribution guidelines tell project participants how to contribute to the project by defining a file named CONTRIBUTING.md
+![[Pasted image 20231208202855.png]]
