@@ -62,6 +62,18 @@ We can you the final statement to do the final process after all
 ![[Pasted image 20231209231111.png]]
 
 **Objects and Classes**
-
+Each object has:
+- A type
+- An internal data representation (blueprint)
+- A set of procedures for interacting with object (methods)
+	- Sorting is an example of a method that interacts with the data in the object
+An object is an instance of a particular type
+![[Pasted image 20231209233648.png]]
+Creating the class. Then we can get objects or instances of that class
+- Data attributes
+	- We use constructor __init__(self,...) to initialize data attributes
+- Methods
+![[Pasted image 20231209234153.png]]
+- 
 
 
