@@ -20,7 +20,7 @@ print (my_name[::-2]) #oinrTbo
 Escape sequences: "\" (for example, \n or \t)
 
 **List and tuples**
-Tuples are an ordered sequence, recognized as curly brackets (1, 2, 3, 4, 5)
+Tuples are an ordered sequence, recognized as brackets (1, 2, 3, 4, 5)
 - Tuples can store any data types such as string, integer, float...
 - tuples[-1] = 5
 - Tuples (also list) can concatenate, which means: tuple2 = tuple1 + ("haha", 10)
@@ -31,7 +31,24 @@ List is mutable, order sequence.
 ![[Pasted image 20231209200029.png]]
 ![[Pasted image 20231209200052.png]]
 
+**Dictionary**
+Is a type of collection in Python. It has key and value with curly brackets {}
+The keys have to be immutable and unique
+The values can be immutable, mutable and duplicates
 
+**Sets**
+Type of collections
+It is unordered (does not record element position)
+Only has unique elements
+Defined as {}. For example: set = {1, 2, 3, 4}
+We can convert list to set by using set(list)
+Set operation:
+- Adding item: set.add("hello")
+- Removing item: set.remove("bye")
+We can use mathematical operation for two sets to return False or True, also to return new set
+![[Pasted image 20231209201758.png]]
+![[Pasted image 20231209201838.png]]
+![[Pasted image 20231209201911.png]]
 
 
 
