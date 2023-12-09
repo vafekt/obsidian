@@ -50,5 +50,18 @@ We can use mathematical operation for two sets to return False or True, also to 
 ![[Pasted image 20231209201838.png]]
 ![[Pasted image 20231209201911.png]]
 
+**Exception Handling**
+It is Try...Except statement
+It can be one try with more than one except:
+![[Pasted image 20231209230849.png]]
+
+It can be useful when using else for successful input
+![[Pasted image 20231209230952.png]]
+
+We can you the final statement to do the final process after all
+![[Pasted image 20231209231111.png]]
+
+**Objects and Classes**
+
 
 
