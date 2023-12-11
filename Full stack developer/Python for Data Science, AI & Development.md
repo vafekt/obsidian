@@ -146,3 +146,47 @@ It is a library for scientific computing.
 a=np.array([0,1,7,3, 7])
 ![[Pasted image 20231210165410.png]]
 ![[Pasted image 20231210165444.png]]
+
+**APIs, and Data Collection**
+It is Application Program Interface
+- API lets 2 pieces of software talk to each other
+![[Pasted image 20231211201915.png]]
+- For example, in Pandas, we use Pandas API to process the data by communicating with the other Software Components. Now, from the Python program, we create a dictionary, and pass it to Pandas (actually to pandas API). We then use the dataframe to communicate with the API.
+![[Pasted image 20231211202353.png]]
+- When we call a method (df.head()), the dataframe communicates with the API and displays the first rows of the dataframe
+REST APIs are another popular type of API. They allow you to communicate through the internet, so you can take advantage of resources like storage, data. algorithms and much more.
+- REpresentational State Transfer API
+- In REST API, your program is called the client. API communicates with a web service you call through the internet
+- They have a set of rules regarding
+	- Communication
+	- Input or Request
+	- Output or Response
+![[Pasted image 20231211202829.png]]
+- In the first step, you have HTTP Request message to tell Rest API what to do. The instruction in json file of HTTP message is sent to tell about operation we would like the service to perform.
+In Python, we use pycoingecko to collect data about Coin.
+![[Pasted image 20231211203315.png]]
+
+API key is a way to access the API for identifying you and authorizing you. 
+![[Pasted image 20231211204946.png]]
+To use a public API in your Python code, you need to know the URL of the API endpoint that you want to access.
+- If the API requires authentication or has additional instructions, look for the "Auth" or "HTTPS" columns for more information.
+- Scheme: protocol
+- URL: used to find the location
+- Route: location on the web server
+
+`# Import the requests and json modules for making HTTP requests and handling JSON data, respectively.`
+`import requests`
+`import json`
+
+`# Specify the URL of the API endpoint for retrieving information about fish species.`
+`url = "https://www.fishwatch.gov/api/species"`
+
+`# Make an HTTP GET request to the specified URL and store the response in the data variable.`
+`data = requests.get(url)`
+
+`# Parse the JSON data received from the API response using json.loads() and store it in the results variable.`
+`results = json.loads(data.text)`
+
+![[Pasted image 20231211214124.png]]
+![[Pasted image 20231211214530.png]]
+![[Pasted image 20231211221441.png]]
