@@ -2,6 +2,7 @@ This is a transition technique that enables a service provider to share IPv4 add
 - IP in IP (IPv4-in-IPv6)
 - IPv4 NAPT
 ![[Pasted image 20231206143736.png]]
+
 **Deployment scenarios**
 The most important thing in DS-lite is: IPv4-in-IPv6 tunnel (1) 
 - that is built to cross the network to reach a Carrier-grade IPv4-IPv4 NAT (2) (AFTR - Address Family Translation Router)
@@ -11,6 +12,30 @@ Benefits:
 - A key characteristic: Communications between end-nodes stay within their address family.
 	- IPv6 only communicates with IPv6. And IPv4 only with IPv4
 	- No protocol translation involved
+
+**Key characteristics**
+There are 2 key components of DS-lite
+- B4 (Basic Bridging BroadBand)
+- AFTR (Address Family Transition Router)
+There are 2 key aspects in DS-lite to allow IPv4 clients to connect to the Internet
+- Use of an IPv4-in-IPv6 tunneling mechanism between B4 and AFTR
+- Use of NAPT44 (IPv4-IPv4 CGNAT) in the AFTR
+NAPT44 process is centralized in AFTR (not B4).
+The B4 function is located in the CPE, This CPE has IPv4 on the LAN side towards IPv4 clients.
+- CPE/B4 offers IPv4 clients the DHCP service with private IPv4 addresses and DNS proxy.
+- DNS proxy allows the CPE/B4 to receive DNS requests in IPv4 and resolve them using IPv6 on the operator's network.
+- The WAN interface of CPE/B4 is IPv6-only and allows communicating and routing IPv6 traffic towards AFTR
+- CPE/B4 encapsulates all IPv4 traffic using IPv4-in-IPv6 tunnel and forwarding to AFTR (vice versa)
+- CPE/B4 must be provided with the IPv6 address of AFTR (for mapping destination). The address can be configured using manual configuration or DHCPv6 options.
+The AFTR function may be located in an edge router on ISP's network. 
+- It must have at least 2 interfaces:
+	- 1 interface on IPv6 side of operator network for communicating with all CPEs/B4s
+	- 1 WAN interface on the IPv4 Internet.
+- It receives IPv6 traffic (IPv4 packet encapsulated inside), decapsulates and extracts IPv4 traffic from the tunnel. Then it proceeds to perform stateful NAPT44
+	- In NAPT44, AFTR uses the pool of public IPv4 addresses assigned to the WAN interface
+DS-lite supports all types of unicast traffic, but not multicast traffic.
+- DS-lite defines the well-known 192.0.0.0/29 range, reserving 192.0.0.1 for AFTR and 192.0.0.2 for B4
+
 - **B4**
 	- B4 is a function implemented on a dual-stack-capable node (either a connected device or a CPE).
 	- Encapsulation: Defining the multipoint-to-point IPv4-in-IPv6 tunnel that ends on the service provider AFTR.
