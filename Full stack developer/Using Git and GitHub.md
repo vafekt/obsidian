@@ -35,6 +35,7 @@ git push -u (origin) (master): pushing code to the repository on the Internet
 gitk: shows the graphical result
 git pull: when you have changes in remote repository but still do not update in the local repository. It is used to have update.
 git request-pull: to create a summary of changes for upstream to pull
+git-daemon: a repository administrator use to allow anonymous downloads from the repository
 git fetch: transfers any changes from remote repository to the local one.
 ![[Pasted image 20231207225106.png]]
 "origin" word means the shorthand for the remote repository's URL
@@ -89,3 +90,10 @@ When to fork or clone?
 - Developer
 - Integrator: Receives changes made by others, reviews and responds to pull-requests
 - Administrator: structures repository organization
+
+Code of conduct: A code of conduct helps set the ground rules for the behavior of your project's participants. It defines standards for how to engage in a community.
+GitHub provides templates for common codes of conduct to help you quickly add one to your project. You define a file named CODE_OF_CONDUCT.md in the root folder of the repository.
+![[Pasted image 20231208202934.png]]
+
+The contribution guidelines tell project participants how to contribute to the project by defining a file named CONTRIBUTING.md
+![[Pasted image 20231208202855.png]]
