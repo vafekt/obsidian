@@ -24,4 +24,9 @@ Benefits:
 			- There can be a situation when original IPv4 packet is not oversize (it can be fragmented, but already on the local-link) but the packet is oversized after IPv6 encapsulation. Then: IPv4 must not be fragmented. 
 				- Fragmentation must happen after the encapsulation of IPv6 packet.
 				- Reassembly must happen before the decapsulation of IPv4 packet.
-			- 
+- It is popular for B4 and AFTR to use IPv6 through DHCPv6 so security vulnerabilities for exploiting addresses can be possible.
+	- Because B4 element might obtain new IPv6 address because of lease expiry, traffic forward to B4 using previous IPv6 many never reach the destination (or delivered to another B4, in this case there are more than 1 B4)
+	- It also affects all mapping types
+		- implicit (TCP SYN)
+		- explicit (using PCP)
+- When there are multiple CPEs (multiple CPEs connect to one B4)
