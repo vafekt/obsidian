@@ -49,9 +49,15 @@ DS-lite supports all types of unicast traffic, but not multicast traffic.
 			- There can be a situation when original IPv4 packet is not oversize (it can be fragmented, but already on the local-link) but the packet is oversized after IPv6 encapsulation. Then: IPv4 must not be fragmented. 
 				- Fragmentation must happen after the encapsulation of IPv6 packet.
 				- Reassembly must happen before the decapsulation of IPv4 packet.
+	- B4 is configured with IPv6 from the ISP. It can also learn the address of a DNS recursive server through DHCPv6 (or other methods over IPv6)
+		- But the DHCPv6 server only defines option to get IPv6 address of DNS server (not IPv4 address of recursive DNS server)
+		- So B4 has to perform all DNS resolution over IPv6
+		- B4 can also pass this IPv6 address to downstream IPv6 nodes, but not for IPv4 nodes. So B4 should implement DNS proxy (the same function as DNS recursive server, but proxy is only a caching server).
+		- If the proxy does not have the IP address, it will forward the request to a recursive DNS server.
 - It is popular for B4 and AFTR to use IPv6 through DHCPv6 so security vulnerabilities for exploiting addresses can be possible.
 	- Because B4 element might obtain new IPv6 address because of lease expiry, traffic forward to B4 using previous IPv6 many never reach the destination (or delivered to another B4, in this case there are more than 1 B4)
 	- It also affects all mapping types
 		- implicit (TCP SYN)
 		- explicit (using PCP)
+- 
 - When there are multiple CPEs (multiple CPEs connect to one B4)
