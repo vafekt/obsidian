@@ -61,11 +61,17 @@ DS-lite supports all types of unicast traffic, but not multicast traffic.
 	- Fragmentation and reassembly
 		- Fragmentation must happen after the encapsulation on the IPv6 packet
 		- Reassembly must happen before the decapsulation of IPv6 header
-		- 
+		- Fragmentation (at entry-point) is easy (lightweight) operation, but reassembly (at exit-point) is not that easy:
+			- After receiving the first fragmented packet, the exit-point must wait for the second fragmented packet to arrive to reassemble the 2 for decapsulation. So it requires the exit-point to buffer and keep track of packets.
+			- If AFTR is the exit-point for many tunnels and many devices simultaneously source a large number of fragmented packets through AFTR, this will require enormous resources to keep track of flows
+		- DNS:
+			- B4 can only perform DNS resolution over IPv6, and DNS packets are not expected to go through AFTR
+		- Extended Binding table
+			- includes the source IPv6 address of incoming packets (when there are multiple B4s)
+			- It is used to disambiguate between overlapping IPv4 address space of customers
 - It is popular for B4 and AFTR to use IPv6 through DHCPv6 so security vulnerabilities for exploiting addresses can be possible.
 	- Because B4 element might obtain new IPv6 address because of lease expiry, traffic forward to B4 using previous IPv6 many never reach the destination (or delivered to another B4, in this case there are more than 1 B4)
 	- It also affects all mapping types
 		- implicit (TCP SYN)
 		- explicit (using PCP)
 - 
-- When there are multiple CPEs (multiple CPEs connect to one B4)
