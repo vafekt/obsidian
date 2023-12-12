@@ -35,8 +35,9 @@ The AFTR function may be located in an edge router on ISP's network.
 	- In NAPT44, AFTR uses the pool of public IPv4 addresses assigned to the WAN interface
 DS-lite supports all types of unicast traffic, but not multicast traffic.
 - DS-lite defines the well-known 192.0.0.0/29 range, reserving 192.0.0.1 for AFTR and 192.0.0.2 for B4
+- If there are multiple B4s, more address in this range can be applied
 
-- **B4**
+**B4**
 	- B4 is a function implemented on a dual-stack-capable node (either a connected device or a CPE).
 	- Encapsulation: Defining the multipoint-to-point IPv4-in-IPv6 tunnel that ends on the service provider AFTR.
 	- Fragmentation and Reassembly: Because there is another protocol IPv6 upon the IPv4 packet, the MTU size of all links between B4 and AFTR elements reduces at least 40 bytes (the datagram part decreases to have space for IPv6 header).
@@ -49,11 +50,18 @@ DS-lite supports all types of unicast traffic, but not multicast traffic.
 			- There can be a situation when original IPv4 packet is not oversize (it can be fragmented, but already on the local-link) but the packet is oversized after IPv6 encapsulation. Then: IPv4 must not be fragmented. 
 				- Fragmentation must happen after the encapsulation of IPv6 packet.
 				- Reassembly must happen before the decapsulation of IPv4 packet.
-	- B4 is configured with IPv6 from the ISP. It can also learn the address of a DNS recursive server through DHCPv6 (or other methods over IPv6)
+	- B4 is configured with IPv6 from the ISP. It can also learn the address of a DNS recursive server through DHCPv6 (or other methods over IPv6). More details in https://www.rfc-editor.org/rfc/rfc6334
 		- But the DHCPv6 server only defines option to get IPv6 address of DNS server (not IPv4 address of recursive DNS server)
 		- So B4 has to perform all DNS resolution over IPv6
 		- B4 can also pass this IPv6 address to downstream IPv6 nodes, but not for IPv4 nodes. So B4 should implement DNS proxy (the same function as DNS recursive server, but proxy is only a caching server).
-		- If the proxy does not have the IP address, it will forward the request to a recursive DNS server.
+		- If the proxy does not have the IP address, it will forward the request to a recursive DNS server. Then B4 has to support a security-aware behind B4. That means DNS proxy must also be security aware. More details in https://www.rfc-editor.org/rfc/rfc4033#section-6
+
+**AFTR**
+	- This element has to combine the task of IPv4-in-IPv6 tunnel endpoint and IPv4-IPv4 NAT
+	- Fragmentation and reassembly
+		- Fragmentation must happen after the encapsulation on the IPv6 packet
+		- Reassembly must happen before the decapsulation of IPv6 header
+		- 
 - It is popular for B4 and AFTR to use IPv6 through DHCPv6 so security vulnerabilities for exploiting addresses can be possible.
 	- Because B4 element might obtain new IPv6 address because of lease expiry, traffic forward to B4 using previous IPv6 many never reach the destination (or delivered to another B4, in this case there are more than 1 B4)
 	- It also affects all mapping types
