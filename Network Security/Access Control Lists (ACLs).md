@@ -5,6 +5,28 @@ When a match is found, the appropriate action (permit or deny) is taken, and pro
 At the end of every ACL is an implicit deny ACE, which denies all packets that did not match earlier in the ACL.
 
 Types of ACLs:
-- 
+- Numbered standard ACLs: This ACL defines packets based solely on the source network. They use the numbered entries 1-99, and 1300-1999
+- Numbered extended ACLs: This ACL defines packets based on source, destination, protocol, port or a combination of other packet attributes, and they use the numbered entries 100-199 and 2000-2699
+- Named ACLs: Allows standard and extended ACLs to be given names instead of numbers
+- Port ACLs (PACLs): use standard, extended, named, and named extended MAC ACLs to filter traffic on Layer 2 switchports
+- VLAN ACLs (VACLs): use standard, extended, named, and named extended MAC ACLs to filter traffic on VLANs
+
+Wildcard mask: It is a new concept used to define the range of IP addresses in ACL or routing purposes. 
+![[Pasted image 20231219220954.png]]
+![[Pasted image 20231219221100.png]]
+
+**_ip access-list extended ACL-Example2  
+deny ip host 10.0.0.5 any  
+permit ip any any_**  
+Trong ví dụ này, từ khóa "host" được sử dụng làm cách viết tắt cho **Wildcard mask** 0.0.0.0, chỉ định đối sánh chính xác cho địa chỉ IP 10.0.0.5. ACL từ chối lưu lượng truy cập từ máy cụ thể này đến bất kỳ đích nào trong khi cho phép tất cả lưu lượng truy cập khác.
+
+Bạn muốn cấu hình EIGRP để chỉ bao gồm giao diện FastEthernet0/0 (mạng con 192.168.0.0/23) trong quy trình định tuyến. Bạn sẽ sử dụng cấu hình sau:    
+**_router eigrp 100  
+network 192.168.0.0 0.0.1.255_**    
+Trong ví dụ này, quy trình EIGRP với AS số 100 được định cấu hình với câu lệnh mạng bao gồm dải địa chỉ IP 192.168.0.0 – 192.168.1.255, sử dụng **Wildcard mask** 0.0.1.255.
+
+After applying to an interface, ACL will have its effect. But we need to define ACL first. 
+
+Numbered ACLs:
 
 
