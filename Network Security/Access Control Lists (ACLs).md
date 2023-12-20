@@ -28,5 +28,10 @@ Trong ví dụ này, quy trình EIGRP với AS số 100 được định cấu h
 After applying to an interface, ACL will have its effect. But we need to define ACL first. 
 
 Numbered ACLs:
+- The process for defining this ACL (in case of standard ACL):
+	- using the command access-list {number} { deny | permit } source [source-wildcard] [log]. The ACL number can be 1–99 or 1300–1999.
+	- Apply the ACL to an interface by using the command ip access-group {acl-number} {in|out} under interface configuration mode. The direction (in or out) in which the ACL needs to be applied must be specified. Cisco routers allow only one inbound ACL and one outbound ACL per interface
+![[Pasted image 20231220102100.png]]
+- 
 
 
