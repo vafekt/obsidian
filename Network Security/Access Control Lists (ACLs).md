@@ -32,6 +32,26 @@ Numbered ACLs:
 	- using the command access-list {number} { deny | permit } source [source-wildcard] [log]. The ACL number can be 1–99 or 1300–1999.
 	- Apply the ACL to an interface by using the command ip access-group {acl-number} {in|out} under interface configuration mode. The direction (in or out) in which the ACL needs to be applied must be specified. Cisco routers allow only one inbound ACL and one outbound ACL per interface
 ![[Pasted image 20231220102100.png]]
+![[Pasted image 20231220102616.png]]
+
+Port ACLs:
+- Access lists applied on Layer 2 ports are called port access control lists (PACLs)
+- PACLs only support filtering incoming traffic on an interface (no outbound filtering support).
+- PACLs cannot filter Layer 2 control packets, such as CDP, VTP, DTP, PAgP, UDLD, and STP
+- PACLs are supported only in hardware. 
+- PACLs do not support ACLs to filter IPv6, ARP, or Multiprotocol Label Switching (MPLS) traffic
+- PACLS are only used in mode switchport (with 2 type trunk or access)
+![[Pasted image 20231220110852.png]]
+
+VLAN ACLs:
+- Access lists applied to VLANs
+- VACLs can filter traffic that is bridged within a VLAN or that is routed into or out of a VLAN.
+- Define a VLAN access map by using the command vlan access-map name sequence
+- Configure the match statement by using the command match { ip address { aclnumber | acl-name } | mac address acl-name }.
+- Configure the action statement by using the command action forward|drop [log]. The action statement specifies the action to be taken when a match occurs
+- Apply the VACL by using the command vlan filter vlan-access-map-name vlan-list. vlan-list can be a single VLAN, a range of VLANs (such as 5–30), or a comma-separated list of multiple VLANs (such as 1,2–4,6)
+- a VLAN access map applied to VLAN 20 to drop ICMP and Telnet traffic and allow other traffic.
+![[Pasted image 20231220111708.png]]
 - 
 
 

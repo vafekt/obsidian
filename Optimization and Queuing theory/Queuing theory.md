@@ -1,0 +1,34 @@
+1. Basic ideas of queuing theory models (parts of queuing systems and their parameters, Kendall classification, stochastic processes, B&D processes and their classification). [10] p. 2 – 6.
+
+- Parts of queuing system:
+![[Pasted image 20231221094002.png]]
+	- Population of customers: It can be limited or unlimited. 
+		- Unlimited population is used in a theoretical system with a large number of possible customers (a bank on a busy street, or petrol station). The number of customers in the system does not affect the arrival process.
+		- Limited population can be a number of processes to be run by a computer. The number of customers in the system affects the arrival process.
+	- Arrival defines the way customers enter the system. Mostly random with random intervals between two adjacent arrivals. The distribution of arrival is called arrival pattern.
+	- Queue represents customers waiting for service (can be empty). Warning: Customers being served are not considered to be in the queue.
+		- Maximum queue size: maximum number of customers waiting in the queue.
+		- System capacity: the maximum number of customers in the system = maximum queue size + number of service channels
+		- Queuing discipline: represent the way the queue is organized
+			- FIFO - orderly queue, waiting time minimum
+			- LIFO - stack, waiting time maximum
+			- SIRO - served in random order
+			- Priority queue
+	- Service represents some activity taking time and the customers ask. It can a a real service carried on. Typically a service takes random time. Distribution of service duration is called Service pattern.
+	- Output represents the way customers leave the system. It is usually ignored by theoretical models but sometimes the customers leaving the system enter the queue again (round robin)
+- Definition of Queuing theory: is mathematical models of queuing systems that take input parameters and provide quantitative effectiveness parameters. These parameters describe the system performance.
+- Kendall classification
+	- Describes the queuing system with 5 symbols: A/B/X/Y/Z
+		- A is the arrival pattern (distribution of intervals between successive arrivals). 
+		- B is the service pattern (distribution of service duration). 
+		- X is the number of parallel service channels. 
+		- Y is the restriction on system capacity. Omitted for unlimited queues. 
+		- Z is the queue discipline (FIFO, LIFO). Omitted for FIFO or if not specified.
+	- These types of distribution can be applied:
+		- M is the exponential distribution of intervals between arrivals or service duration respectively (M comes from the adjective Markovian).
+			- used **to predict the waiting time until the next event occurs, such as a success, failure, or arrival**. For example, Exponential Distribution can be used to predict: The amount of time it takes a customer to make a purchase in your store (success)
+		- Ek is the Erlang type k distribution of intervals or service duration. 
+		- D is the symbol for deterministic (known) arrivals and constant service duration. 
+		- G is a general (any) distribution. 
+		- GI is a general (any) distribution with independent random values
+	- 
