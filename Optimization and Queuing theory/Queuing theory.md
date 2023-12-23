@@ -26,9 +26,18 @@
 		- Z is the queue discipline (FIFO, LIFO). Omitted for FIFO or if not specified.
 	- These types of distribution can be applied:
 		- M is the exponential distribution of intervals between arrivals or service duration respectively (M comes from the adjective Markovian).
+![[Pasted image 20231223172159.png]]
 			- used **to predict the waiting time until the next event occurs, such as a success, failure, or arrival**. For example, Exponential Distribution can be used to predict: The amount of time it takes a customer to make a purchase in your store (success)
+			- A **Poisson distribution** is a discrete [probability distribution](https://www.scribbr.com/statistics/probability-distributions/). It gives the probability of an event happening a certain number of times (_k_) within a given interval of time or space.
+			- The Poisson distribution has only one [parameter](https://www.scribbr.com/statistics/parameter-vs-statistic/), λ (lambda), which is the [mean](https://www.scribbr.com/statistics/central-tendency/#mean) number of events. The graph below shows examples of Poisson distributions with different values of λ.
 		- Ek is the Erlang type k distribution of intervals or service duration. 
 		- D is the symbol for deterministic (known) arrivals and constant service duration. 
 		- G is a general (any) distribution. 
 		- GI is a general (any) distribution with independent random values
+- Stochastic process
+	- Is also known as random process (opposite to deterministic process)
+	- For each value of t (usually assumed to be time) there is a random variable X(t) - output with values in a certain state space S.
+		- If the state space is discrete, the process is called a discrete-state stochastic process
+		- If the state space is continuous, the process is called a continuous-state stochastic process
+- Birth and Death process
 	- 
