@@ -40,4 +40,17 @@
 		- If the state space is discrete, the process is called a discrete-state stochastic process
 		- If the state space is continuous, the process is called a continuous-state stochastic process
 - Birth and Death process
-	- 
+	- Is a stochastic process with continuous time and discrete state space S={0,1,2, ... }
+	- from any state n belonging to S\{0} only transitions to the neighboring states n+1 and n-1 are allowed. From state 0, the only allowed transition is to state 1.
+	- Classification:
+		- Markovian birth-death process has transition probabilities dependent only on the current state (not on the past history how the current state has been reached).
+		- Linear Markovian processes have the above probabilities dependent linearly on n and delta t
+		- Pure birth process has mi n= 0. Pure death process has delta n = 0.
+		- A birth–death process can only transition between adjacent states, meaning the state variable can only increase by one (birth) or decrease by one (death)
+	![[Pasted image 20231223193453.png]]
+
+2. Poisson process I (probabilities pn(t) and outline of their derivation, random variables associated with Poisson process and their distribution, use of the Poisson process in practice). [10] p. 6 – 10
+
+3. Poisson process II (forgetfulness property, merging and splitting of Poisson processes, arrival, departure and time average probabilities - PASTA property). [10] p. 10 – 14, 21 – 22.
+4. 
+5. 
