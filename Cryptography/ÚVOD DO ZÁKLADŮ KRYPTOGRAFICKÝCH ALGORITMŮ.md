@@ -50,5 +50,20 @@
 		- Tranzitivita: jestliže a≡b (mod n) a b≡c (mod n), potom a≡c (mod n)
 11. Zbytková třída
 ![[Pasted image 20231206112317.png]]
-- Příklad: 
-		
+![[Pasted image 20231224111709.png]]
+12. Speciální prvky
+- Multiplikativní inverzní prvek
+![[Pasted image 20231224114616.png]]
+- Aditivní opačný prvek
+![[Pasted image 20231224114946.png]]
+13. Modulární sčítání
+![[Pasted image 20231224115656.png]]
+15. Modulární násobení
+![[Pasted image 20231224152023.png]]
+- Modulární dělení:
+![[Pasted image 20231224153309.png]]
+16. Modulární mocnění
+![[Pasted image 20231224202642.png]]
+17. Modulární inverze
+- 
+19. 
