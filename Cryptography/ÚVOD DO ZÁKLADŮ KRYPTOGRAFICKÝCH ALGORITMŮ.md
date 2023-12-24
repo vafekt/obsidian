@@ -65,5 +65,13 @@
 16. Modulární mocnění
 ![[Pasted image 20231224202642.png]]
 17. Modulární inverze
-- 
-19. 
+![[Pasted image 20231224203618.png]]
+19. Algebraické struktury
+![[Pasted image 20231224205205.png]]
+![[Pasted image 20231224205226.png]]
+![[Pasted image 20231224205243.png]]
+![[Pasted image 20231224205352.png]]
+20. Cyklické grupy a řád prvku
+- Grupa (G, o) je cyklická, pokud existuje prvek, nazývaný generátor, který, když je opakovaně kombinován operací grupy, generuje celou grupu. Jinými slovy, cyklická grupa je generována jediným prvkem. (sčítání nebo multiplikativní)
+![[Pasted image 20231224220636.png]]
+![[Pasted image 20231224221454.png]]
