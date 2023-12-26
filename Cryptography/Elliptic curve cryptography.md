@@ -33,4 +33,33 @@
 - Problem of Diffie Hellman
 ![[Pasted image 20231225113319.png]]
 ![[Pasted image 20231225113409.png]]
-3. 
+
+3. Kryptografie eliptických křivek
+- Eliptické křivky jsou speciálním typem kubických křivek.
+- Eliptické křivka nemá nic společného s elipsou. Důvod je jen, že kubická funkce má tvar elipsy.
+- ECC je založena na dvou algebraických strukturách: Konečné těleso F a eliptická křivka E.
+- Kryptografické klíče v ECC jsou podstatně kratší.
+
+4. Bezpečnostní úrovně - NIST
+- Bezpečnost ECC je založena na problému diskrétního logaritmu nad eliptickou křivkou (ECDL)
+- ECDL je rychlý, ale ještě pomalejší než klasický DL problém
+
+5. ECDL a DL problém
+- ECDL (Elliptic Curve Discrete Logarithm): Je DL problém nad množinou bodů eliptické křivky nad konečným tělesem
+![[Pasted image 20231226150911.png]]
+![[Pasted image 20231226203513.png]]
+- This is the function in the simplified Weierstrass form
+![[Pasted image 20231226203754.png]]
+
+6. Smooth elliptic curve
+- The curve is smooth if it does not contain singularity point (weird point, there is 0 or many tangent). For the regular point, there is only 1 tangent.
+- To form a group over the object F, the curve needs to be smooth
+	- Elliptic curve group is additive (+)
+- Singularity point: 
+![[Pasted image 20231226211240.png]]
+- Finite object:
+![[Pasted image 20231226211427.png]]
+- Order of elliptic curve
+![[Pasted image 20231226213904.png]]
+![[Pasted image 20231226215106.png]]
+![[Pasted image 20231226232253.png]]

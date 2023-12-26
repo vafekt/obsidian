@@ -75,3 +75,5 @@
 - Grupa (G, o) je cyklická, pokud existuje prvek, nazývaný generátor, který, když je opakovaně kombinován operací grupy, generuje celou grupu. Jinými slovy, cyklická grupa je generována jediným prvkem. (sčítání nebo multiplikativní)
 ![[Pasted image 20231224220636.png]]
 ![[Pasted image 20231224221454.png]]
+
+![[Pasted image 20231226120143.png]]
