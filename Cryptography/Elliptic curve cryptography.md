@@ -63,3 +63,50 @@
 ![[Pasted image 20231226213904.png]]
 ![[Pasted image 20231226215106.png]]
 ![[Pasted image 20231226232253.png]]
+
+7. Sčítání bodů
+![[Pasted image 20231227083232.png]]
+![[Pasted image 20231227083326.png]]
+![[Pasted image 20231227083405.png]]
+![[Pasted image 20231227083434.png]]
+
+8. Skalární násobení bodu
+![[Pasted image 20231227084206.png]]
+![[Pasted image 20231227084805.png]]
+
+9. Problém diskrétního logaritmu nad eliptickou křivkou
+- Je založen na složitosti efektivního počítání bodů eliptické křivky nad konečným tělesem
+![[Pasted image 20231227085143.png]]
+![[Pasted image 20231227085322.png]]
+
+10. Bilineární párování
+- Další vlastnost nebo operace (není v ECC, ale může být používán s kombinací ECC)
+![[Pasted image 20231228133147.png]]
+![[Pasted image 20231227100016.png]]
+![[Pasted image 20231227100037.png]]
+![[Pasted image 20231227100236.png]]
+![[Pasted image 20231228135443.png]]
+- Stupeň křivky
+![[Pasted image 20231228141722.png]]
+
+- Problém inverze párování
+![[Pasted image 20231228142448.png]]
+![[Pasted image 20231228142543.png]]
+
+With the use of pairing, we can create new signatures: Group signatures, ring signatures
+- Encryption: Identity-based encryption, attribute-based encryption
+![[Pasted image 20231228142600.png]]
+![[Pasted image 20231228142744.png]]
+
+11. MOV útok
+- Why does modern cryptography prefer the discrete log problem over the additive group of points on an Elliptic Curve defined over a Finite Field rather than integer factorization or the discrete log problem over the multiplicative group of a Finite Field?
+![[Pasted image 20231228150828.png]]
+- The MOV (Menezes-Okamoto-Vanstone) attack transforms a Discrete Log problem in an Elliptic Curve Group into a Discrete Log Problem in the Multiplicative Group of a Finite Field - i.e. ECDLP to DLP
+- Roots of Unity
+![[Pasted image 20231228152500.png]]
+- Embedding Degree
+![[Pasted image 20231228152517.png]]
+![[Pasted image 20231228152736.png]]
+![[Pasted image 20231228154306.png]]
+![[Pasted image 20231228154317.png]]
+
