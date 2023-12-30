@@ -44,7 +44,7 @@ The commitment scheme should be designed in such a way that it is computationall
 8. Interactive proving system
 ![[Pasted image 20231230152953.png]]
 ![[Pasted image 20231230153008.png]]
-- Protocol with knowledge
+- Protocol with zero-knowledge
 - 
 
 
