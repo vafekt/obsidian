@@ -90,7 +90,8 @@ DS-lite supports all types of unicast traffic, but not multicast traffic.
 	- Some deploys another way in IPv4 after B4 to connect to DNS server so it can avoid using IPv6 in DNS
 - Fragmentation and Reassembly
 	- Because there is another header in the tunnel (IPv6 with 40 bytes), the MTU size should be decreased by 40 bytes in the tunnel.
-	- Packet Too Big between them
+	- Packet Too Big between them in IPv6 network
+	- Changing MTU with the use of RA when using SLAAC or DHCPv6
 - Blacklisting the shared IPv4 address
 	- Many B4s can use one public IPv4 address at AFTR (NAT device). So when this IPv4 is blacklisted by a remote host, the service is blocked
-	- 
+- 
