@@ -50,7 +50,35 @@
 	![[Pasted image 20231223193453.png]]
 
 2. Poisson process I (probabilities pn(t) and outline of their derivation, random variables associated with Poisson process and their distribution, use of the Poisson process in practice). [10] p. 6 – 10
+- A Poisson process is a mathematical model used to describe the timing of events that occur with a known constant rate and are independent of the time since the last event.
+- Let's consider a Poisson process {N(t), t ≥ 0}, where N(t) is the number of events that have occurred up to time t. The probabilities P(N(t) = n), denoted as pn(t), represent the probability of having exactly n events occurring in the interval [0, t].
+	![[Pasted image 20231231131551.png]]
+- Derivation of the Poisson distribution
+	- Derivation is applied when studying how the quantities changes over a short interval to find the differential equation. From that, we have the probability above.
+- Random variables:
+	![[Pasted image 20231231165841.png]]
+	![[Pasted image 20231231165946.png]]
+- Some Poisson process examples (small error examples): 
+	- births in a large population 
+	- arrivals to a bank on a busy street 
+	- petrol station on a busy motor-way 
+	- failures from a large number of machines 
+	- failures of a complicated machine where many different parts can fail
 
 3. Poisson process II (forgetfulness property, merging and splitting of Poisson processes, arrival, departure and time average probabilities - PASTA property). [10] p. 10 – 14, 21 – 22.
-4. 
-5. 
+- Forgetfulness property of exponential distribution
+	![[Pasted image 20231231192301.png]]
+	![[Pasted image 20231231192313.png]]
+- Merging of Poisson processes
+	![[Pasted image 20231231192431.png]]
+- Random splitting
+	![[Pasted image 20231231192602.png]]
+
+4. Model M/M/1 (assumptions, probabilities pn and outline of their derivation, effectiveness parameters L, LQ, W, WQ, Little’s formula). [10] p. 15 – 20.
+- Description of the model
+	![[Pasted image 20231231193355.png]]
+- Probabilities
+- 
+
+
+
