@@ -83,6 +83,7 @@ DS-lite supports all types of unicast traffic, but not multicast traffic.
 	- Through SLAAC, one router is added to be the router
 	- Setting the tunnel
 		- It needs to be multipoint-to-point: More than one B4. But they shares the same DHCP server or router
+	- Softwire: a type of tunneling protocol that creates a virtual "wire" that transparently encapsulates another protocol as if it was an anonymous point-to-point low-level link
 - DNS
 	- In the customer network, clients will ask for DNS resolver in IPv4. So B4 has to be DNS proxy to perform DNS resolution through IPv6. This DNS query is not expected to go through the AFTR element
 	- B4 sends DNS queries to an external recursive resolver over IPv6.
