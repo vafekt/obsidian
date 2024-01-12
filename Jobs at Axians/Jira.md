@@ -13,4 +13,7 @@ Jira is a software to help manage, develop and communicate about projects. It ma
 - Every issue has an issue key = [project key] + [issue number]
 	- it is unique
 3. Administration hierarchy
+- Do site admin and setting
+	- Jira admin and setting
+		- Project admin and setting
 - 
