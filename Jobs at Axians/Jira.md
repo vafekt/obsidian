@@ -16,4 +16,3 @@ Jira is a software to help manage, develop and communicate about projects. It ma
 - Do site admin and setting
 	- Jira admin and setting
 		- Project admin and setting
-- 
