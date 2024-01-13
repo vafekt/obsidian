@@ -85,9 +85,9 @@ DS-lite supports all types of unicast traffic, but not multicast traffic.
 		- It needs to be multipoint-to-point: More than one B4. But they shares the same DHCP server or router
 - DNS
 	- In the customer network, clients will ask for DNS resolver in IPv4. So B4 has to be DNS proxy to perform DNS resolution through IPv6. This DNS query is not expected to go through the AFTR element
-	- B4 sends DNS queries to an external recursive resolver over IPv6.
+	- B4 sends DNS queries to an external recursive resolver over IPv6 (tunnel).
 		- B4 should implement a proxy server what will proxy DNS query from IPv4 transport to the DNS server in the IPv6 network
-	- Some deploys another way in IPv4 after B4 to connect to DNS server so it can avoid using IPv6 in DNS
+	- Some deploy another way in IPv4 after B4 to connect to DNS server so it can avoid using IPv6 in DNS
 - Fragmentation and Reassembly
 	- Because there is another header in the tunnel (IPv6 with 40 bytes), the MTU size should be decreased by 40 bytes in the tunnel.
 	- Packet Too Big between them

@@ -1,7 +1,7 @@
 1. Basic ideas of queuing theory models (parts of queuing systems and their parameters, Kendall classification, stochastic processes, B&D processes and their classification). [10] p. 2 – 6.
 
 - Parts of queuing system:
-![[Pasted image 20231221094002.png]]
+	![[Pasted image 20231221094002.png]]
 	- Population of customers: It can be limited or unlimited. 
 		- Unlimited population is used in a theoretical system with a large number of possible customers (a bank on a busy street, or petrol station). The number of customers in the system does not affect the arrival process.
 		- Limited population can be a number of processes to be run by a computer. The number of customers in the system affects the arrival process.
