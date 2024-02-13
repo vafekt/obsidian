@@ -1,65 +1,71 @@
 Automating tasks with basic scripting or programming involves writing code to perform repetitive or tedious tasks efficiently. This can be achieved using various scripting and programming languages, depending on the task's complexity and the tools available. Here's an overview:
 
-### Tools and Languages:
+1. **Tell me about a time when you had to automate a task using scripting or programming:**
 
-1. **Bash/Shell Scripting:**
+In my role as a security researcher / programmer at VUT, I was tasked with creating tools for enhancing our penetration testing capabilities. One specific challenge was the need to automate the process of vulnerability scanning, identification and reporting. To address this, I decided to develop a custom penetration testing tool using Python.
+
+The tool aimed to automate the initial stages of penetration testing, including network reconnaissance, vulnerability scanning, and data analysis. I started by researching common penetration testing methodologies (in IPv6) and identifying key tasks that could be automated to improve efficiency. The key tasks are:
+- Automatically scanning the local network. Every time when a new device enters the network, the tool can detect and get the information.
+- Combining several tools performing in various penetration testing frameworks.
+- Converting retrieved information to json and csv format.
+- Cleaning up the network after finishing work.
+
+Using Python and relevant libraries, I created a tool that automated the discovery of hosts, scanned for vulnerabilities, and generated detailed reports with actionable insights for our security team.
+
+During development, I focused on ensuring the tool was user-friendly and configurable for different testing scenarios. I implemented features for customizing scan parameters, managing scan results, and generating comprehensive reports that could be easily interpreted by both technical and non-technical stakeholders.
+
+After implementing the tool, I conducted thorough testing in simulated environments to validate its effectiveness and accuracy. The tool successfully reduced the time required for routine penetration testing tasks, allowing our team to allocate more time to in-depth analysis and remediation efforts.
+
+This automation not only improved the efficiency of our penetration testing processes but also contributed to the overall security posture of our clients. It showcased my ability to bridge programming skills with a deep understanding of cybersecurity principles to develop practical solutions for complex challenges.
+
+2. **Automated testing, unit test, integration test:**
+
+Unit testing involves testing individual units or components of a software independently to ensure they function as expected. In this example,  class `TestPacketParser` contains two unit tests: one for valid packet data (MAC, IP, Payload, Fragmentation field) and another for invalid data. The `parse_packet` function is part of the security tool, and the unit tests ensure that it behaves correctly in different scenarios
+
+Integration testing involves testing the interaction between different components or modules to ensure they work together as intended. Assuming your security tool has a module that interfaces with external APIs to fetch threat intelligence data, you can create integration tests to verify the integration between your tool and the API.
+
+3. **Can you give an example of a reporting dashboard you have created for software engineering metrics:**
+
+Metrics Included:
+- Sprint Progress:
+    - Burndown chart displaying the remaining work in the current sprint.
+    - Velocity chart showing the team's historical performance over sprints.
+- Code Quality:
+    - Code coverage trends over time.
+    - Number of code smells and technical debt evolution.
+- Bug Tracking:
+    - Number of open, closed, and reopened bugs.
+    - Average time to resolve bugs.
+- Release Management:
+    - Deployment frequency chart.
+    - Success rate of deployments.
+
+Visualization:
+- Burndown chart: Line chart displaying the work completed versus the work remaining in the current sprint.
+- Cycle time report.
+- Flow Diagram.
+- Pie Chart Report.
+
+4. **How would you approach extracting development lifecycle data from Jira and automating the process:**
+
+To automate the extraction of development lifecycle data from Jira, you can use Jira's REST API along with a scripting or programming language. Here is a step-by-step approach using Python as an example:
+
+### Prerequisites:
+
+1. **Jira Account:** Ensure you have access to a Jira account with the necessary permissions to read the data you're interested in.
     
-    - Ideal for automating tasks on Unix/Linux systems.
-    - Useful for file manipulation, batch processing, and running system commands.
-2. **Python:**
+2. **API Token (for Jira Cloud):** If you're using Jira Cloud, generate an API token from your Atlassian account settings.
     
-    - A versatile language suitable for a wide range of automation tasks.
-    - Rich ecosystem with libraries and modules for diverse purposes.
-    - Easy to learn and write, making it a popular choice for beginners.
-3. **PowerShell:**
+3. **Python and Requests Library:** Install Python on your machine and the `requests` library, which will help you interact with Jira's REST API.
+
+4. **Understand Jira REST API:** Familiarize yourself with Jira's REST API documentation to understand the available endpoints and how to structure requests. The Jira REST API documentation can be found on the Atlassian website.
     
-    - Native scripting language for Windows systems.
-    - Provides seamless integration with Windows components and services.
-4. **Ruby:**
+5. **Authentication:** Use your Jira credentials or API token to authenticate your requests. Include the credentials or token in the headers of your HTTP requests.
     
-    - General-purpose scripting language with a focus on simplicity and productivity.
-    - Often used for automation tasks and web development.
-5. **JavaScript (Node.js):**
+6. **Identify Data Endpoints:** Determine which Jira REST API endpoints contain the data you need. For development lifecycle data, you might be interested in endpoints related to projects, issues, sprints, or boards.
     
-    - Widely used for automating web-related tasks.
-    - Node.js allows running JavaScript on servers, making it suitable for server-side scripting.
+7. **Retrieve Data Using API Endpoints:** Use the appropriate API endpoints to retrieve the desired development lifecycle data. Examples include: Retrieving issues: `/rest/api/3/search?jql=project=YOUR_PROJECT_KEY`
 
-### Experience:
+8. **Transform and Store Data:** Once you retrieve the data, you may need to transform it into a suitable format for your needs (e.g., CSV, JSON). You can then store the data in a local file or a database.
+ 
 
-1. **Beginner:**
-    
-    - Start with simple tasks like file manipulation, text processing, or basic system commands.
-    - Learn basic programming constructs (loops, conditionals, functions).
-    - Gain familiarity with the chosen scripting language's syntax and built-in functions.
-2. **Intermediate:**
-    
-    - Tackle more complex automation tasks.
-    - Explore libraries and modules relevant to your tasks.
-    - Handle data in different formats (JSON, CSV, XML).
-    - Understand error handling and logging for robust scripts.
-3. **Advanced:**
-    
-    - Incorporate concepts like multi threading or multiprocessing for parallel execution.
-    - Interact with APIs or databases for dynamic data handling.
-    - Create reusable modules or functions to enhance code organization.
-    - Implement logging, testing, and documentation for maintainability.
-
-### Example:
-
-Let's consider a simple automation task: renaming multiple files in a directory. We'll use Python for this example.
-
-import os
-
-def rename_files(directory):
-    for filename in os.listdir(directory):
-        if filename.endswith('.txt'):
-            new_name = filename.replace('old_', 'new_')
-            os.rename(os.path.join(directory, filename), os.path.join(directory, new_name))
-            print(f'Renamed: {filename} to {new_name}')
-
-# Example usage
-directory_path = '/path/to/your/directory'
-rename_files(directory_path)
-
-
-This Python script iterates through files in a specified directory, identifies files with the '.txt' extension, and renames them by replacing 'old_' with 'new_'. This is a basic example, but automation scripts can become more sophisticated as the complexity of the tasks increases.
