@@ -95,4 +95,8 @@ DS-lite supports all types of unicast traffic, but not multicast traffic.
 	- Changing MTU with the use of RA when using SLAAC or DHCPv6
 - Blacklisting the shared IPv4 address
 	- Many B4s can use one public IPv4 address at AFTR (NAT device). So when this IPv4 is blacklisted by a remote host, the service is blocked
-- 
+
+
+- Writing 2 Python scripts that can be implemented in Kali, Ubuntu, CentOS, RHEL, Finnix. Comparing the difference when performing. Is there any large difference? All OSs can work properly? Up to now, all functions (Tunneling, NAT-44, Port redirection, Fragmentation, Reassembly) are done. The only fundermental function that is not done is DNS proxy.
+
+- Performing attacks based on attacker's location: Try to compare behaviours of all OSs during attacks (from client, CPE, to AFTR, server).
