@@ -86,4 +86,61 @@
 		- Access point name (APN): It is the gateway between the mobile network and another computer network (Internet). 
 		![[Pasted image 20240215175614.png]]
 		- The APN is used to find the right IP address that the device should be identified with on the network, determine if a private network is needed, choose the correct security settings that should be used.
-		- 
+- OSI model:
+	- 7 layers (now from the lowest)
+	- Physical layer
+		- The lowest layer
+		- Responsible for the physical connection between devices
+		- Contain information in form of bits. So it is responsible for transmitting individual bits from one node to the next.
+		- After receiving signal, it converts into 0 and 1 and sends to Data Link layer
+		- Functions
+			- Bit synchronization
+			- Bit rate control
+			- Transmission mode: Simplex, half-duplex, full-duplex
+		- Devices: Hub, Repeater, Modem, Cables
+	- Data Link Layer
+		- Make sure that data transfer is error-free from one node to another.
+		- Framing the dat.
+		- After creating the frames, it adds MAC addresses in the header to specify the destination and source.
+		- 2 sublayers
+			- Logical Link Control: provides the logic as it controls the synchronization, multiplexing, flow control and error-checking functions
+			- Media Access Control: defines the network card. MAC address can have unicast, multicast and broadcast
+		- Protocol: Ethernet, PPP, Wi-Fi, ARP
+	- Network layer
+		- For the transmission of data from one host to the other located in different networks. Packet routing.
+		- Defines which route is suitable from source to destination.
+		- Uses packet with IP addresses
+		- Protocols: IP, ICMP, IGMP, PIM, OSPF, BGP, IPsec.
+			- Internet Protocol: provides the addressing and routing mechanism for data packets. IPv4 or IPv6.
+			- Internet Control Message Protocol: for diagnostic and control purposes within IP networks. It is often used to report errors, perform network testing.
+			- Internet Group Management Protocol: for managing group memberships with Query, Report, Done.
+			- Open Shortest Path First: routing protocol commonly used within autonomous systems (AS) with types Hello, Link-state update/request/acknowledgment
+			- Border Gateway Protocol: routing protocol used between different autonomous systems.
+			- IPsec: suite of protocols to secure IP communications.
+	- Transport Layer
+		- Responsible for end to end delivery of the complete message (services).
+		- Data is called segments, provides acknowledgment of the successful data transmission and re-transmits the data if an error is found.
+		- 2 types:
+			- Connection-oriented: TCP
+			- Connectionless Service: UDP
+		- TLS: ensures the confidentiality and integrity of data transmitted between applications over a network, such as the internet. It provides encryption, authentication, and data integrity verification
+	- Session Layer
+		- for the establishment of connection, maintenance of sessions, and authentication, and also ensures security.
+		- Protocols:
+			- NETBIOS: enables communication between computers on a local area network (LAN) and provides services such as name resolution, session establishment, and data transfer
+	- Presentation Layer
+		- Used for translation (ASCII), encryption or compression (JPEG, GIF)
+	- Application Layer
+		- Implemented by the applications which produce data. 
+		- Displaying data or information to users
+		- Protocols:
+			- HTTP
+			- SMTP: sending email messages between servers. It is used to send outgoing mail from email clients to mail servers
+			- POP3: used by email clients to retrieve email messages from a mail server.
+			- DNS
+			- FTP
+			- SSH: cryptographic network protocol used for secure communication over an insecure network. It provides encrypted communication between clients and servers and is commonly used for remote administration of servers.
+			- SNMP: used to manage and monitor network devices and their functions remotely. It allows network administrators to collect information, configure devices, and monitor network performance.
+- TCP/IP
+![[Pasted image 20240215232540.png]]
+- 
