@@ -68,4 +68,22 @@
 	- Transmission medium: the means through which we send out data from one place to another (signal is transmitted in the form of electromagnetic energy through air, vacuum, lights). Wired or wireless.
 	- Protocols: defined rules for communication
 	- Network software: the software that helps people deploy, manage and monitor a network (SDN)
-- 
+- Hub, Switch, Router, Modem, Access point
+	- Hub:
+		- the connector that connects the wires coming from different sides. It is known as a repeater that transmits signal to every port except the port from where the signal is received.
+		- Operates on layer 1 (physical layer)
+	- Switch:
+		- Operates at the data link layer of OSI model, uses switching table to find out the correct destination.
+		- Works on the basis of MAC address and ports to filter and send packets.
+	- Router:
+		- Operates at network layer of OSI
+		- Works on the basis of IP and ports.
+		- Determines the route, performs filtering and encapsulation.
+	- Modem:
+		- The device that converts information to signal (modulate and demodulate). It is connected to the router. It can be ADSL modem, optic modem, GPRS modem.
+		![[Pasted image 20240215175156.png]]
+	- Access point: It is just a switch with WLAN, and can be connected to router or directly to modem.
+		- Access point name (APN): It is the gateway between the mobile network and another computer network (Internet). 
+		![[Pasted image 20240215175614.png]]
+		- The APN is used to find the right IP address that the device should be identified with on the network, determine if a private network is needed, choose the correct security settings that should be used.
+		- 
