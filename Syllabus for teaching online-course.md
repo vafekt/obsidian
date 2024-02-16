@@ -158,4 +158,14 @@
 		- Through the system file: /etc/network
 		- Through bash code
 - Subnets
+	- Subnetting is the way when we divide a big network into smaller networks for easy maintenance, higher security and management.
+	- The network is divided into 2 parts
+		- Network part
+		- Host ID part
+	- There are 5 classes of subnetworks
+		- **Class A:** First Octet Value 0-126
+		- **Class B:** First Octet Value 128-191
+		- **Class C:** First Octet Value 192-233
+		- **Class D:** First Octet Value 224-239
+		- **Class E:** First Octet Value 240-255
 	- 
