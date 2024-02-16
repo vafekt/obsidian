@@ -143,4 +143,13 @@
 			- SNMP: used to manage and monitor network devices and their functions remotely. It allows network administrators to collect information, configure devices, and monitor network performance.
 - TCP/IP
 ![[Pasted image 20240215232540.png]]
-- 
+- Ports and services:
+![[Pasted image 20240216094457.png]]
+- IP configuration:
+	- Steps:
+		- Setting IP, netmask
+			- Manual
+			- DHCP
+		- DNS server
+		- Default Gateway
+		- 
