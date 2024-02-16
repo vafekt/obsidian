@@ -163,9 +163,23 @@
 		- Network part
 		- Host ID part
 	- There are 5 classes of subnetworks
-		- **Class A:** First Octet Value 0-126
-		- **Class B:** First Octet Value 128-191
-		- **Class C:** First Octet Value 192-233
-		- **Class D:** First Octet Value 224-239
-		- **Class E:** First Octet Value 240-255
-	- 
+		- **Class A:** First Octet Value 0-126, 255.0.0.0
+		- **Class B:** First Octet Value 128-191, 255.255.0.0
+		- **Class C:** First Octet Value 192-233, 255.255.255.0
+		- **Class D:** First Octet Value 224-239, for multicasting applications
+		- **Class E:** First Octet Value 240-255, for experimental applications
+	- Examples:
+		- Mask 255.255.255.0 has 16 bits for the subnet and 8 bits of the host.
+			- Have possible 2^8 -2 hosts =254 which is enough
+			- 16 bits would accommodate 2^8=256 subnets
+		- **Classless Inter-Domain Routing** (CIDR) allows network routers to route data packets to the respective device based on the indicated subnet. Instead of classifying the IP address based on classes, routers retrieve the network and host address as specified by the CIDR suffix
+			- Write the IP address 222.1.1.20 mask 255.255.255.192 in CIDR notation:
+				- Decimal 192 =11000000 binary which means that 2 bits of this octet are used for the subnet. Now add the 24 bits 255.255.255 and we have 26 bits. So we write:
+				- 222.1.1.20/26
+			- Subnet the Class C IP Address 195.1.1.0 So that you have 10 subnets each with a maximum 12 hosts on each subnet. List the Address on host 1 on subnet 0,1,2,3,10
+				- Current mask= 255.255.255.0
+				- Bits needs for 10 subnets =4 =24 =16 possible subnets
+				- Bits needs for 12 hosts = 4 = 24  = 16-2=14 possible hosts.
+				- So our mask in binary =**11110000**= **240** decimal
+				- Final Mask =**255.255.255.240**
+			- 
