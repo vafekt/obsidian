@@ -19,3 +19,21 @@ Setting minimum and maximum column limits. There can be column over maximum limi
 
 Pull vs push in process steps
 ![[Pasted image 20240113195756.png]]
+- After the wait staff takes the order, they usually push it to a queue for the queue to start.
+- When the cook has the availability to start preparing the order, the cook pulls the order from the queue. After the food is prepared, the cook pushes the order to the wait staff delivery queue.
+![[Pasted image 20240113200308.png]]
+- Why Pull?
+	- Team members select work, they are not assigned work
+
+Kanban reports
+- For visualizing the work
+- Promoting transparency
+- Aid planning and estimating
+- Typically using cumulative flow diagram
+![[Pasted image 20240113200559.png]]
+
+Lead time and cycle time
+![[Pasted image 20240113200741.png]]
+![[Pasted image 20240113200817.png]]
+
+Cycle time control chart
