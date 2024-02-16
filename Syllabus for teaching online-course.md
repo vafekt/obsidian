@@ -192,4 +192,30 @@
 		- Geographic redundancy
 			- This redundancy ensures that if the main data center encounters a severe outage like a city-wide blackout that lasts longer than the power backup systems can provide an alternate data center in a different location
 		- Data redundancy
-	- 
+	- LAN redundancy
+		- Provide physical redundancy in a switched network. That is why Spanning Tree Algorithm is introduced.
+		- STP ensures that there is only one logical path between all destinations on the network by intentionally blocking redundant paths that can cause a loop.
+			- The physical paths still exist to provide redundancy, but are disabled when working.
+			- When a path fails, STP recalculates the paths and unblocks the necessary ports to make redundant path become active.
+			![[Pasted image 20240217003053.png]]
+			- How to choose the root bridge?
+				- First, based on bridge priority (lowest should get the root). Then based on path cost, and MAC address
+				![[Pasted image 20240217003437.png]]
+				- Process of BPDU propagation
+				![[Pasted image 20240217003703.png]]
+				![[Pasted image 20240217003810.png]]
+	- Default gateway redundancy
+		- HSRP (Hot standby router Protocol)
+			- With one active, one in standby. 
+		- VRRP (Virtual Router Redundancy Protocol)
+			- With one in Master, one in backup
+		- Gateway Load Balancing Protocol
+- VLAN
+	- logical overlay network that groups together a subset of devices that share a physical LAN, isolating the traffic for each group
+	- VLANs can be port-based (sometimes called _static_) or use-based (sometimes called _dynamic_).
+		- Network engineers create port-based VLANs by assigning [ports](https://www.techtarget.com/searchnetworking/definition/port) on a network switch to a VLAN. Those ports only communicate on the assigned VLANs, and each port is on one VLAN only
+		- Network engineers create use-based VLANs by assigning traffic to a VLAN dynamically, based on the traffic type or the device creating the traffic. A port might be assigned to a VLAN based on the identity of the device attached
+		- A VLAN is identified on network switches by a VLAN ID. Each port on a switch can have one or more VLAN IDs assigned to it and will land in a default VLAN if no other one is assigned. Each VLAN provides data-link access to all hosts connected to switch ports configured with its VLAN ID.
+		-  [Trunk](https://www.techtarget.com/searchnetworking/definition/trunk) links between switches know which VLANs span the switches, accepting and passing along all traffic for any VLAN in use on both sides of the trunk. When a frame reaches its destination switch port, the VLAN tag is removed before the frame is transmitted to the destination device.
+2. Computer networks security
+- 
