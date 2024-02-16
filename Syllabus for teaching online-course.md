@@ -182,4 +182,14 @@
 				- Bits needs for 12 hosts = 4 = 24  = 16-2=14 possible hosts.
 				- So our mask in binary =**11110000**= **240** decimal
 				- Final Mask =**255.255.255.240**
-			- 
+- Redundant methods
+	- Provides strategy and plans in case a network failure occurs
+	- Types:
+		- Pathway redundancy
+			- We have several alternate network paths. If a link is down, there is an alternative way of reaching the destination.
+		- Power redundancy
+			- Most network devices are dependent on electric power for them to function. That is why having a backup power source in the location of your network devices may it be a simple equipment room or a high-end data center, is a must.
+		- Geographic redundancy
+			- This redundancy ensures that if the main data center encounters a severe outage like a city-wide blackout that lasts longer than the power backup systems can provide an alternate data center in a different location
+		- Data redundancy
+	- 
