@@ -152,4 +152,10 @@
 			- DHCP
 		- DNS server
 		- Default Gateway
-		- 
+	- In Windows
+	![[Pasted image 20240216094928.png]]
+	- In Linux
+		- Through the system file: /etc/network
+		- Through bash code
+- Subnets
+	- 
