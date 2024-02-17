@@ -216,6 +216,10 @@
 		- Network engineers create port-based VLANs by assigning [ports](https://www.techtarget.com/searchnetworking/definition/port) on a network switch to a VLAN. Those ports only communicate on the assigned VLANs, and each port is on one VLAN only
 		- Network engineers create use-based VLANs by assigning traffic to a VLAN dynamically, based on the traffic type or the device creating the traffic. A port might be assigned to a VLAN based on the identity of the device attached
 		- A VLAN is identified on network switches by a VLAN ID. Each port on a switch can have one or more VLAN IDs assigned to it and will land in a default VLAN if no other one is assigned. Each VLAN provides data-link access to all hosts connected to switch ports configured with its VLAN ID.
-		-  [Trunk](https://www.techtarget.com/searchnetworking/definition/trunk) links between switches know which VLANs span the switches, accepting and passing along all traffic for any VLAN in use on both sides of the trunk. When a frame reaches its destination switch port, the VLAN tag is removed before the frame is transmitted to the destination device.
+		- [Trunk](https://www.techtarget.com/searchnetworking/definition/trunk) links between switches know which VLANs span the switches, accepting and passing along all traffic for any VLAN in use on both sides of the trunk. When a frame reaches its destination switch port, the VLAN tag is removed before the frame is transmitted to the destination device.
 2. Computer networks security
-- 
+- Firewall, Demilitarized zone, ACL
+	- Firewall
+		- Is a devices (barrier) sitting between the private internal network and the public Internet. It is used to allow non-threatening traffic in and to keep dangerous traffic out.
+		![[Pasted image 20240217102048.png]]
+		- 
