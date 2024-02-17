@@ -218,8 +218,27 @@
 		- A VLAN is identified on network switches by a VLAN ID. Each port on a switch can have one or more VLAN IDs assigned to it and will land in a default VLAN if no other one is assigned. Each VLAN provides data-link access to all hosts connected to switch ports configured with its VLAN ID.
 		- [Trunk](https://www.techtarget.com/searchnetworking/definition/trunk) links between switches know which VLANs span the switches, accepting and passing along all traffic for any VLAN in use on both sides of the trunk. When a frame reaches its destination switch port, the VLAN tag is removed before the frame is transmitted to the destination device.
 2. Computer networks security
-- Firewall, Demilitarized zone, ACL
+- Firewall, Demilitarized zone, ACL, IDS/IPS
 	- Firewall
 		- Is a devices (barrier) sitting between the private internal network and the public Internet. It is used to allow non-threatening traffic in and to keep dangerous traffic out.
 		![[Pasted image 20240217102048.png]]
-		- 
+		- Before firewalls, this is performed by Access Control Lists residing on routers. It defines rules that determine whether network access should be granted or denied to a specific entry.
+		- Stateful firewall:
+			- Stateful firewalls are firewalls that keep track of the state of network connections. This means that they can remember information about each packet, such as its source, destination, protocol, and sequence number. By storing this information in a state table, stateful firewalls can match incoming and outgoing packets to their corresponding connections, and allow or deny them based on predefined rules. Stateful firewalls can also [detect and prevent attacks](https://www.linkedin.com/advice/1/how-can-you-detect-prevent-ransomware-attacks?trk=article-ssr-frontend-x-article_little-text-block) that try to manipulate or exploit the state of connections, such as denial-of-service (DoS) or spoofing attacks.
+			- Example: Cisco ASA, Check Point, Palo Alto Networks, Fortinet, and Juniper SRX
+		- Stateless firewall:
+			- Stateless firewalls are firewalls that do not keep track of the state of network connections (not aware of traffic pattern). This means that they only inspect each packet individually, based on its header information, such as its source, destination, port, and protocol. Stateless firewalls do not store any information about packets or connections, and they apply the same rules to every packet, regardless of its context or history. Stateless firewalls are faster and simpler than stateful firewalls, but they are also less flexible and secure.
+			- Example: Linux iptables, Windows Firewall, pfSense, and MikroTik RouterOS, Access list.
+		- Comparing types of firewall
+			- When choosing a firewall for your network, there is no definitive answer, as it depends on the size, architecture, traffic, and security requirements. Generally speaking, a stateless firewall is faster, simpler, and cheaper for small or simple networks with low traffic and security needs. 
+			- Conversely, a stateful firewall is more secure, flexible, and compatible with larger or complex networks with high traffic and security needs.
+	- IDS/IPS
+		- IDS: keep an eye out for hostile activities or policy violations on a network or system. It finds possible security flaws by examining system activity and looking for oddities or patterns. It can also keep an eye on audit trails of questionable activity and system records. It alerts administrators when it detects a potential threat.
+		- IPS: uses traffic analysis to identify and stop any network threats. It can be software- or hardware-based, and it functions at the network layer. Its primary goal is to detect and stop harmful traffic before it compromises the security of the system or network.
+		- The primary distinction is that an IPS/IDS detects and notifies a system administrator of an attack or, depending on configuration, stops it, while firewalls perform actions such as blocking and filtering traffic.
+		![[Pasted image 20240217104852.png]]
+	- DMZ
+		- DMZ network (sometimes referred to as a "demilitarized zone") functions as a subnetwork containing an organization's exposed, outward-facing services. It acts as the exposed point to an untrusted network, commonly the Internet.
+		- add an extra layer of security to an organization's local area network. A protected and monitored network node that faces outside the internal network can access what is exposed in the DMZ, while the rest of the organization's network is safe behind a firewall.
+		![[Pasted image 20240217105049.png]]
+		- The DMZ Network exists to protect the hosts most vulnerable to attack. These hosts usually involve services that extend to users outside of the local area network, the most common examples being email, web servers, and DNS servers. Because of the increased potential for attack, they are placed into the monitored subnetwork to help protect the rest of the network if they become compromised.
