@@ -77,4 +77,37 @@
 - Pros
 	- Fast
 	- No parameter tuning
-- 
+- But we usually don't use the whole data set for training, but dividing into several parts
+![[Pasted image 20240224162222.png]]
+	- Finally we compute the error between the actual values and predicted values
+	![[Pasted image 20240224162356.png]]
+- Training & out-of-sample accuracy
+	- Training accuracy
+		- High training accuracy is not necessarily a good thing
+		- Can be a result of over-fitting, and produce a non-generalized model
+	- Out-of-sample accuracy
+		- Should be high. But how can we improve. Using train/test split
+		![[Pasted image 20240224162804.png]]
+- K-fold cross-validation
+![[Pasted image 20240224163103.png]]
+![[Pasted image 20240224163129.png]]
+- Evaluation metrics in regression models
+	- Compare actual values and predicted values (error)
+		- MAE
+		- MSE
+		- RMSE
+		![[Pasted image 20240224172115.png]]
+- Multiple linear regression
+	![[Pasted image 20240225095431.png]]
+	- So now we have to find a lot of theta, defined by a matrix.
+		![[Pasted image 20240225095529.png]]
+	- In multiple linear regression we want to estimate theta so that we can achieve the minimum of MSE.
+		![[Pasted image 20240225101643.png]]
+		- Using ordinary least squares with linear algebra operations to find the best value. But it takes a long time for large datasets
+		- An optimization algorithm
+			- Gradient Descent
+	- After having theta, we draw the graph and compute the error
+	- When to use the multiple linear regression against the simple
+		- When there are a lot of independent variables
+		- But we need to check the linear relationships between dependent and independent variables, we need to switch to non-linear regression
+			- Checking by scattering plot
