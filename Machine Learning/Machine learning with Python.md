@@ -238,3 +238,5 @@
 				- So we choose ages to split node into leaves (left-hand). The right-hand already has the classification.
 					![[Pasted image 20240226230454.png]]
 			- Now, at the branch of age, there is also full classification. Loves Popcorn is deleted. The Gini Index or Impurity measures the probability for a random instance being misclassified when chosen randomly => The lower, the better
+- Regression tree
+	- 
