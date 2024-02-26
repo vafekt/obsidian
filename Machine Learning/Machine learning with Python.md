@@ -239,4 +239,28 @@
 					![[Pasted image 20240226230454.png]]
 			- Now, at the branch of age, there is also full classification. Loves Popcorn is deleted. The Gini Index or Impurity measures the probability for a random instance being misclassified when chosen randomly => The lower, the better
 - Regression tree
-	- 
+	- The basic idea behind regression trees is to split our data into groups based on features, like in classification, and return a prediction that is the average across the data we have already seen.
+	- Consider the housing data below, where we are using the ‘Age’ to predict the ‘Price’ of a house
+	![[Pasted image 20240226232227.png]]
+	![[Pasted image 20240226232337.png]]
+	- The way the trees are built are similar to classification, but instead of using the entropy criterion. In Classification Trees, we choose features that increase the information gain. In Regression Trees, we choose features that minimize the error. (MAE, MSE)
+	- Steps:
+		![[Pasted image 20240226232616.png]]
+		- the first step is to decide what the first decision is. We will do this by using the criterion and checking every single feature in the dataset to see which one produces the minimal error.
+			- Now, take Near Water feature as an example:
+			![[Pasted image 20240226232838.png]]
+			![[Pasted image 20240226232829.png]]
+				- MAE = Sum of all average errors / number
+			- But what about the feature with a lot of values (not just Yes and No)? For example, Age feature
+				- We do this by creating a boundary between each point, then we calculate the error
+				- For example, first we create the boundary between the first two data points, which are (0, 260831.34) and (5, 347982.98), so we create a boundary of x = 2.5 (The midpoint between the x component of the first two data points). We now find the average price of the houses on the left and right sides of this boundary and use it to calculate the MAE.
+				![[Pasted image 20240226234518.png]]
+				![[Pasted image 20240226234605.png]]
+				- Now repeat the process for each pair of consecutive points. Choose the lowest MAE for the boundary point
+			- Since the whole MAE of Age is smaller than Near Water, Age is chosen. 
+				![[Pasted image 20240226234838.png]]
+				- With the regression tree above, we have two options, we can either stop here and use the average value of the ‘Yes’ (left) and ‘No’ (right) to predict the house prices, or we can continue to add more decisions to either branch. There are a few conditions that are commonly used to stop growing regression trees:
+					- Tree depth
+					- Number of remaining samples on a branch
+					- Number of samples on each branch if another decision is made
+					- 
