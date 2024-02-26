@@ -263,4 +263,6 @@
 					- Tree depth
 					- Number of remaining samples on a branch
 					- Number of samples on each branch if another decision is made
-					- 
+				- If we want to have more depth in age, the next node need to compare with Near Water again
+					![[Pasted image 20240226235049.png]]
+				- 
