@@ -165,4 +165,41 @@
 		- Then we calculate the average log loss across all rows of the test set. The ideal classifier has small value of log loss.
 		![[Pasted image 20240226194718.png]]
 3. Decision Trees
-- 
+- The basic intuition behind a decision tree is to map out all possible decision paths in the form of a tree
+- Decision trees are built by splitting the training set into distinct nodes
+![[Pasted image 20240226210437.png]]
+	- Internal node: a test
+	- Branch: a result of the test
+	- Leaf node assigns a patient to a class
+- Steps
+	- Choose an attribute from your dataset
+	- Calculate the significance of attribute in splitting of data
+	- Split the data based on the value of the best attribute
+	- Go to step 1 and repeat
+- First find which attribute is the best
+	- Choose the highest node based on the label associated with it. Pick the highest rate = certainty
+	![[Pasted image 20240226211627.png]]
+	- The best feature is the one to decrease the impurity of patients in the leaves the best = more predictiveness = lower entropy
+		- **The minimum value of zero corresponds to a node containing the elements of the same class**. In case this occurs, the node is called pure. **The maximum value of 0.5 corresponds to the highest impurity of a node**.
+		![[Pasted image 20240226212142.png]]
+		- A node is called pure if 100% falls into a specific category of the target field
+		![[Pasted image 20240226212320.png]]
+		- At each step, we minimize the impurity. Impurity of nodes is calculated by entropy of data in the node
+- Entropy
+	- First, understand entropy: (suppose that we have only 2 classes)
+		- It gives the measure of impurity or randomness in the data. 
+		![[Pasted image 20240226214827.png]]
+		- It is given by: Entropy= — P(class 1) x Log(P(class 1)) — P(class 2) x Log(P(class 2))
+	- The entropy will be high if we have impure or mixed class labels in a dataset. Class = Label
+		- If there are two classes, class 1 and class 2, of equal numbers, i.e, the number of entries of class 1 is equal to the number of entries of class 2, and we randomly select an entry, it will belong to any class 1 or 2 with a 50% probability each. In such cases, the entropy will be high.
+		- If a certain dataset has all data belonging to either class 1 or class 2, the entropy obtained is 0
+	- **Information Gain:** The information gain is the decrease in the entropy after the dataset is split on the basis of an attribute. Constructing a decision tree depends on finding the attribute that returns the highest information gain. It helps in choosing which feature or attribute will be used to create the deciding internal node at a particular point.
+		- Information gain=Entropy(s) — [(Weighted average) x (Entropy of each feature)]
+- Steps
+	![[Pasted image 20240226215751.png]]
+	- Choosing the feature to be the root node. It is based on the amount of information gain
+		![[Pasted image 20240226220006.png]]
+		![[Pasted image 20240226220019.png]]
+		![[Pasted image 20240226220036.png]]
+		![[Pasted image 20240226220048.png]]
+		- The one with the highest information gain is chosen. In this case, feature 1 is chosen
