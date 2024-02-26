@@ -164,4 +164,5 @@
 		- We can calculate the log loss for each row using the log loss equation, which measures how far each prediction is, from the actual label.
 		- Then we calculate the average log loss across all rows of the test set. The ideal classifier has small value of log loss.
 		![[Pasted image 20240226194718.png]]
-		- 
+3. Decision Trees
+- 
