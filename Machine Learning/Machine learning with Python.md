@@ -111,3 +111,32 @@
 		- When there are a lot of independent variables
 		- But we need to check the linear relationships between dependent and independent variables, we need to switch to non-linear regression
 			- Checking by scattering plot
+2. K-Nearest Neighbors
+- Belongs to the classification approach (supervised learning). It determines the class label for an unlabeled test case
+	- If we have a lot of features, and multiple labels for classifying, it will be called multi-class classification.
+	![[Pasted image 20240226185905.png]]
+	- Algorithms
+		- Decision Trees
+		- Naïve Bayes
+		- Linear Discriminant Analysis
+		- K-Nearest Neighbor
+		- Logistic Regression
+		- Neural networks
+		- SVM
+	![[Pasted image 20240226190429.png]]
+- Intuition behind K-Nearest Neighbors algorithm
+	- We want to specify which label is the category at row 8. So we suppose that this category depends on several nearest neighbor categories (5, in this case). Then we choose the label based on the majority of one label (3) to assign to row 8.
+	- Takes a bunch of labeled points and uses them to learn how to label other points
+		- based on similarity
+- How to calculate the similarity
+	- Euclidean distance
+	![[Pasted image 20240226190913.png]]
+	- Example of calculating distance in 1-dimensional space
+	![[Pasted image 20240226191025.png]]
+	- In 2-dimensional space
+	![[Pasted image 20240226191428.png]]
+- How to choose the best value of K
+	- Small value of K can lead to over-fitting
+	- Very large number can lead to over-generalized
+- Can be used for regression
+	- For example, assume that you are predicting the price of a home based on its feature set, such as number of rooms, square footage, the year it was built, and so on. You can easily find the three nearest neighbor houses of course not only based on distance but also based on all the attributes and then predict the price of the house as the medium of neighbors.
