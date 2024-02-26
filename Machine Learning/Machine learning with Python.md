@@ -193,8 +193,10 @@
 	- The entropy will be high if we have impure or mixed class labels in a dataset. Class = Label
 		- If there are two classes, class 1 and class 2, of equal numbers, i.e, the number of entries of class 1 is equal to the number of entries of class 2, and we randomly select an entry, it will belong to any class 1 or 2 with a 50% probability each. In such cases, the entropy will be high.
 		- If a certain dataset has all data belonging to either class 1 or class 2, the entropy obtained is 0
-	- **Information Gain:** The information gain is the decrease in the entropy after the dataset is split on the basis of an attribute. Constructing a decision tree depends on finding the attribute that returns the highest information gain. It helps in choosing which feature or attribute will be used to create the deciding internal node at a particular point.
-		- Information gain=Entropy(s) — [(Weighted average) x (Entropy of each feature)]
+	- 2 approaches
+		- **Information Gain:** The information gain is the decrease in the entropy after the dataset is split on the basis of an attribute. Constructing a decision tree depends on finding the attribute that returns the highest information gain. It helps in choosing which feature or attribute will be used to create the deciding internal node at a particular point.
+			- Information gain=Entropy(s) — [(Weighted average) x (Entropy of each feature)]
+		- Gini impurity
 - Steps
 	![[Pasted image 20240226215751.png]]
 	- Choosing the feature to be the root node. It is based on the amount of information gain
@@ -202,4 +204,37 @@
 		![[Pasted image 20240226220019.png]]
 		![[Pasted image 20240226220036.png]]
 		![[Pasted image 20240226220048.png]]
-		- The one with the highest information gain is chosen. In this case, feature 1 is chosen
+		- The one with the highest information gain is chosen. In this case, feature 1 is chosen.
+	- Now, from feature 1, we need to set the branches that
+		- But others have impurity so we need further splitting a attain greater purity
+		- Or we can leave all options in a feature, and repeat the process of finding the best node with information gain
+- Process with gini impurity. When a decision tree predicts numeric values, we have regression tree
+	![[Pasted image 20240226224530.png]]
+	- First, deciding whether Loves Popcorn, Loves Soda or Age should be the top of the tree
+		- we have to test all features.
+		- For Loves Popcorn: Gini Impurity = 1 - (Probability of Yes)^2 - (Probability of No)^2
+			- In first branch, gini impurity = 0.375
+			- In second branch, gini impurity = 0.444
+			- Total gini impurity = (3+1)/(3+1+2+1) * 0.375 + (2+1)/(3+1+2+1) * 0.444 = 0.405
+		![[Pasted image 20240226224832.png]]
+		- For Loves Soda
+			- Total gini impurity = 0.214
+		![[Pasted image 20240226224946.png]]
+		- For age, it is more difficult because we have numeric values
+			- So, firstly, we need to sort the value from the lowest to the highest
+			- Then we calculate the average age for all adjacent people
+				![[Pasted image 20240226225632.png]]
+			- Now we iteratively put all values as the condition. For example:
+				![[Pasted image 20240226225738.png]]
+				- Now compute total gini impurity = 0.429
+			- We have values for others
+				![[Pasted image 20240226225844.png]]
+				- Choose the lowest 0.343. Because there are two candidates, pick either one. I pick 15.
+		- Now Loves Soda = 0.214 (lowest), it is chosen to be the root. Now adding branches
+			![[Pasted image 20240226230121.png]]
+			- Choose between Popcorn and age
+				- Popcorn now has impurity = 0.25 based on the new dataset. Age < 12.5 has impurity = 0 (the best), so don't need to check other ages
+				![[Pasted image 20240226230319.png]]
+				- So we choose ages to split node into leaves (left-hand). The right-hand already has the classification.
+					![[Pasted image 20240226230454.png]]
+			- Now, at the branch of age, there is also full classification. Loves Popcorn is deleted. The Gini Index or Impurity measures the probability for a random instance being misclassified when chosen randomly => The lower, the better
