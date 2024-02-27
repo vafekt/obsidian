@@ -266,4 +266,37 @@
 				- If we want to have more depth in age, the next node need to compare with Near Water again
 					![[Pasted image 20240226235049.png]]
 4. Logistic regression
+- It is classification algorithm for categorical variables
+![[Pasted image 20240227151847.png]]
+- Even though having the name Regression, it cannot be used for predicting continuous values (price of the house). But it is used for predicting binary label (Yes-No). But the independent variables can be continuous or categorical
+- Application
+	- Predicting the probability of a person having a heart attack
+	- Predicting the likelihood of a customer to purchase a product
+- When is logistic regression suitable?
+	- If your data is binary
+		- 0/1
+	- If you need probabilistic results, the logistic regression returns the probability between 0 and 1.
+	- When our data is linearly separated. So line, plane or hyperplane can be applied.
+	![[Pasted image 20240227153717.png]]
+- Logistic regression vs linear regression. Linear regression is actually usable even in the case of logistic regression, but not ideal.
+	- If we use linear regression for classification, we have to set the threshold for deciding whether result is 0 or 1. But if we have a big value, the line is shifted very much (from 0.5 to 0.8 easily). So sigmoid function is better (logistic regression)
+	![[Pasted image 20240227160442.png]]
+	- Sigmoid solves the problem with very big or very small values
+	![[Pasted image 20240227160558.png]]
+	![[Pasted image 20240227160706.png]]
+- The training process
+	![[Pasted image 20240227160851.png]]
+	- Initialize theta
+	- Calculate predicted y
+	- Compare with the actual output (True or False)
+	- Calculate the error for all input. The lower the cost is, the better the model is. Change the theta to reduce the cost, then calculate predicted y again (Back propagation with gradient descent)
+- General cost function
+	- Theta is also called weight. We need to change the weight so that the cost is reduced
+	![[Pasted image 20240227162738.png]]
+	- It is then converted into:
+	![[Pasted image 20240227162853.png]]
+	- We use gradient descent to minimize the cost
+	![[Pasted image 20240227163135.png]]
+	- Gradient is the derivative of cost function
+5. Support vector machine
 - 
