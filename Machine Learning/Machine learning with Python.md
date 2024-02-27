@@ -299,4 +299,20 @@
 	![[Pasted image 20240227163135.png]]
 	- Gradient is the derivative of cost function
 5. Support vector machine
+- SVM is a supervised algorithm that classifies cases by finding a separator
+	- First, it maps data to a high-dimensional feature space
+	- Finding a separator (hyperplane). Even though the values of dataset are not linearly separated
+	![[Pasted image 20240227165246.png]]
+- Data transformation
+	![[Pasted image 20240227165426.png]]
+	- The way we map data into a higher-dimensional space is called kernelling
+		- Linear / Polynomial / RBF / Sigmoid
+		- Converting nonlinear separability into linear separability
+- How to find the best hyperplane to separate the data
+	- Choose the hyperplane with the biggest margin as much as possible
+	![[Pasted image 20240227170112.png]]
+	- Gradient descent can be applied to find the best line
+- Application
+	- Image recognition
+	- Detecting spam
 - 
