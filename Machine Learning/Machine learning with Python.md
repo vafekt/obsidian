@@ -315,4 +315,14 @@
 - Application
 	- Image recognition
 	- Detecting spam
+5. Multiclass prediction
+- we classify data into multiple class labels
+- Unlike classification trees and nearest neighbors, the concept of Multi-class classification for linear classifiers is not as straightforward. We can convert logistic regression to Multi-class classification using multinomial logistic regression or SoftMax regression
+	- generalization of logistic regression
+	- SoftMax regression will not work for Support Vector Machines (SVM)
+	- One vs. All (One-vs-Rest) and One vs One are two other multi-class classification techniques that can convert most two-class classifiers to a multi-class classifier.
+- SoftMax Regression
+	![[Pasted image 20240227184523.png]]
+	![[Pasted image 20240227184612.png]]
+- One vs All (One vs Rest)
 - 
