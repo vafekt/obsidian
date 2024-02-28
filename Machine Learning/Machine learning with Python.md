@@ -315,4 +315,5 @@
 - Application
 	- Image recognition
 	- Detecting spam
+6. K-Means Clustering
 - 
