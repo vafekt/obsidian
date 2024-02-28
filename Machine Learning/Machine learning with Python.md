@@ -316,4 +316,19 @@
 	- Image recognition
 	- Detecting spam
 6. K-Means Clustering
-- 
+- Segmentation is partitioning a customer base into groups of individuals that have similar characteristics
+	- That why we need clustering (unsupervised ML) 
+	![[Pasted image 20240228174836.png]]
+- Cluster: It is a group of objects that are similar to other objects in the cluster, and dissimilar to data points in other clusters
+![[Pasted image 20240228175156.png]]
+- Clustering algorithms
+	- Partitioned-based clustering
+		- K-Means, Fuzzy c-means
+	- Hierarchical clustering
+		- Produces trees of clusters. Agglomerative, divisive
+	- Density-based clustering
+		- Produces arbitrary shaped samples
+- K-Means algorithm
+	- Partitioning clustering
+	- Divides the data into non-overlapping subsets (clusters) without any cluster internal structure
+	- 
