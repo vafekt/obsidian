@@ -11,3 +11,5 @@ As important as it is, deploying Dual Stack Lite requires a lot of specialized e
 This is the architecture that we have built and performed experimental testing. There are three main parts (IPv4 home network, IPv6 ISP core network and server network). In practice, server network is actually the internet. They are built on the GNS3 platform with all virtual devices. So you can understand everything about Dual Stack Lite through just one computer.
 
 For the implementation, we only need to build CPE and AFTR. Other devices just work normally without any configuration. 
+
+Frame:
