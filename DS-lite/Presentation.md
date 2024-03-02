@@ -13,3 +13,25 @@ This is the architecture that we have built and performed experimental testing. 
 For the implementation, we only need to build CPE and AFTR. Other devices just work normally without any configuration. 
 
 Frame:
+- Abstract:
+	- General introduction about DS-Lite and its meaning
+	- Security problems with DS-Lite
+	- In this paper, we provide a broad overview of the security risks in the DS-Lite and to discuss some possible counteractions
+	- To this end, after a general introduction to security, we discuss the specific security mechanisms adopted.
+	- Then, we report and analyze some of the attacks against virtual devices reported in the literature, in order to point out the current security weaknesses solutions and remark the importance of considering security as an integral part in the design of the systems.
+	- We conclude this article with a reasoned comparison of the considered DS-Lite with respect to a set of qualifying security attributes, namely integrity, anonymity, confidentiality, privacy, access control, authentication, authorization, resilience, self-organization.
+- Introduction
+	- General thing about DS-Lite
+	- Again describing security problems
+- Security challenges
+	- Security requirements
+		- Information Level
+		- Access Level
+		- Functional Level
+	- Taxonomy of security attacks (dividing based on layers)
+		- Possible approaches by attackers
+	- Main security mechanisms
+- Examples of implementation in virtual devices
+	- Introduction about the environment, tools
+	- Description of attacks and showing the effect
+	- Applying the security (should be with graphs and images)
