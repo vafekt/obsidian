@@ -35,3 +35,4 @@ Frame:
 	- Introduction about the environment, tools
 	- Description of attacks and showing the effect
 	- Applying the security (should be with graphs and images)
+- Evaluation of attacks. Which attacks are the most dangerous?
