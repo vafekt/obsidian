@@ -57,3 +57,6 @@ Frame: DoS in DS-Lite
 		- Algorithms
 - Evaluation of attacks. Which attacks are the most dangerous?
 	- Checking the bandwidth to see which one is the most dangerous
+
+For EEICT, we can do a simplified format of this article
+- Name: A review of DoS attacks in DS-Lite
