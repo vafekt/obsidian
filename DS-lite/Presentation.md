@@ -12,7 +12,7 @@ This is the architecture that we have built and performed experimental testing. 
 
 For the implementation, we only need to build CPE and AFTR. Other devices just work normally without any configuration. 
 
-Frame:
+Frame: DoS in DS-Lite
 - Abstract:
 	- General introduction about DS-Lite and its meaning
 	- Security problems with DS-Lite
@@ -54,4 +54,6 @@ Frame:
 		- Application attacks
 	- Applying the security (should be with graphs and images)
 		- ...
+		- Algorithms
 - Evaluation of attacks. Which attacks are the most dangerous?
+	- Checking the bandwidth to see which one is the most dangerous
