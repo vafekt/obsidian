@@ -25,14 +25,33 @@ Frame:
 	- Again describing security problems
 - Security challenges
 	- Security requirements
-		- Information Level
-		- Access Level
-		- Functional Level
+		- Authentication
+		- Integrity
+		- Confidentiality
+		- Access Control
+		- Non-repudiation
+		- Availability
 	- Taxonomy of security attacks (dividing based on layers)
-		- Possible approaches by attackers
+		- Possible approaches by attackers (in different positions)
+		- Network Access Layer
+		- Network Layer
+		- Transport Layer
+		- Application Layer
 	- Main security mechanisms
+		- Encryption
+		- Authentication mechanisms
+		- ...
 - Examples of implementation in virtual devices
 	- Introduction about the environment, tools
+		- GNS3, Python, Designed tool
+		- Virtual machines
 	- Description of attacks and showing the effect
+		- Every attack in different positions
+		- DNS poisoning cache
+		- NAT
+		- PCP
+		- Neighbor Discovery
+		- Application attacks
 	- Applying the security (should be with graphs and images)
+		- ...
 - Evaluation of attacks. Which attacks are the most dangerous?
