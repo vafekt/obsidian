@@ -48,6 +48,7 @@ Frame: DoS in DS-Lite
 	- Description of attacks and showing the effect
 		- Every attack in different positions
 		- DNS poisoning cache
+		- DNS proxy
 		- NAT
 		- PCP
 		- Neighbor Discovery
