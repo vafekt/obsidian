@@ -12,4 +12,51 @@ This is the architecture that we have built and performed experimental testing. 
 
 For the implementation, we only need to build CPE and AFTR. Other devices just work normally without any configuration. 
 
-Frame:
+Frame: DoS in DS-Lite
+- Abstract:
+	- General introduction about DS-Lite and its meaning
+	- Security problems with DS-Lite
+	- In this paper, we provide a broad overview of the security risks in the DS-Lite and to discuss some possible counteractions
+	- To this end, after a general introduction to security, we discuss the specific security mechanisms adopted.
+	- Then, we report and analyze some of the attacks against virtual devices reported in the literature, in order to point out the current security weaknesses solutions and remark the importance of considering security as an integral part in the design of the systems.
+	- We conclude this article with a reasoned comparison of the considered DS-Lite with respect to a set of qualifying security attributes, namely integrity, anonymity, confidentiality, privacy, access control, authentication, authorization, resilience, self-organization.
+- Introduction
+	- General thing about DS-Lite
+	- Again describing security problems
+- Security challenges
+	- Security requirements
+		- Authentication
+		- Integrity
+		- Confidentiality
+		- Access Control
+		- Non-repudiation
+		- Availability
+	- Taxonomy of security attacks (dividing based on layers)
+		- Possible approaches by attackers (in different positions)
+		- Network Access Layer
+		- Network Layer
+		- Transport Layer
+		- Application Layer
+	- Main security mechanisms
+		- Encryption
+		- Authentication mechanisms
+		- ...
+- Examples of implementation in virtual devices
+	- Introduction about the environment, tools
+		- GNS3, Python, Designed tool
+		- Virtual machines
+	- Description of attacks and showing the effect
+		- Every attack in different positions
+		- DNS poisoning cache
+		- NAT
+		- PCP
+		- Neighbor Discovery
+		- Application attacks
+	- Applying the security (should be with graphs and images)
+		- ...
+		- Algorithms
+- Evaluation of attacks. Which attacks are the most dangerous?
+	- Checking the bandwidth to see which one is the most dangerous
+
+For EEICT, we can do a simplified format of this article
+- Name: A review of DoS attacks in DS-Lite
