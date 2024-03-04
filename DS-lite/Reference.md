@@ -19,10 +19,10 @@
 [10. Security of RPL Based 6LoWPAN Networks in the Internet of Things: A Review](https://www.scopus.com/record/display.uri?eid=2-s2.0-85085104743&origin=resultslist&sort=cp-f&src=s&sid=e1b7b26720830ea5e72bc037da1708fd&sot=b&sdt=b&s=TITLE-ABS-KEY%28ipv6+AND+attacks+or+security%29&sl=102&sessionSearchId=e1b7b26720830ea5e72bc037da1708fd&relpos=6)
 
 [11. IPv6 Neighbor Discovery Protocol Specifications, Threats and Countermeasures: A Survey](https://www.scopus.com/record/display.uri?eid=2-s2.0-85028732150&origin=resultslist&sort=cp-f&src=s&sid=e1b7b26720830ea5e72bc037da1708fd&sot=b&sdt=b&s=TITLE-ABS-KEY%28ipv6+AND+attacks+or+security%29&sl=102&sessionSearchId=e1b7b26720830ea5e72bc037da1708fd&relpos=29)
-
 [12. ICMPv6-Based DoS and DDoS Attacks and Defense Mechanisms: Review](https://www.scopus.com/record/display.uri?eid=2-s2.0-85014777021&origin=resultslist&sort=cp-f&src=s&sid=e1b7b26720830ea5e72bc037da1708fd&sot=b&sdt=b&s=TITLE-ABS-KEY%28ipv6+AND+attacks+or+security%29&sl=102&sessionSearchId=e1b7b26720830ea5e72bc037da1708fd&relpos=38)
 
 [13. A Survey of Data Mining and Machine Learning Methods for Cyber Security Intrusion Detection](https://www.scopus.com/record/display.uri?eid=2-s2.0-84971516631&origin=resultslist&sort=cp-f&src=s&sid=e1b7b26720830ea5e72bc037da1708fd&sot=b&sdt=b&s=TITLE-ABS-KEY%28algorithm+security%29&sl=102&sessionSearchId=e1b7b26720830ea5e72bc037da1708fd&relpos=3)
+
 [14. IPv4 to IPv6 Migration and Performance Analysis using GNS3 and Wireshark](https://www.scopus.com/record/display.uri?eid=2-s2.0-85075820027&origin=resultslist&sort=cp-f&src=s&sid=e1b7b26720830ea5e72bc037da1708fd&sot=b&sdt=b&s=TITLE-ABS-KEY%28ipv4+ipv6+transition%29&sl=102&sessionSearchId=e1b7b26720830ea5e72bc037da1708fd&relpos=16)
 
 
