@@ -50,6 +50,8 @@ Frame: DoS in DS-Lite
 		- DNS poisoning cache
 		- DNS proxy
 		- NAT
+			- Reading port exhaustion to know how to flood
+			- 464XLAT
 		- PCP
 		- Neighbor Discovery
 		- Application attacks
