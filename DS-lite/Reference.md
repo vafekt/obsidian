@@ -27,6 +27,12 @@
 
 [15. Comparative studies of IPv6 tunnel security](https://www.scopus.com/record/display.uri?eid=2-s2.0-85050231740&origin=resultslist&sort=plf-f&src=s&sid=8ab82cb53aba57ca3c66932b009486e5&sot=b&sdt=b&s=TITLE-ABS-KEY%28ipv4+AND+to+AND+ipv6+AND+tunnel+security%29&sl=34&sessionSearchId=8ab82cb53aba57ca3c66932b009486e5&relpos=9)
 
+[16. Port Number Exhaustion of a 464XLAT Implementation in a Virtual Environment](https://www.scopus.com/record/display.uri?eid=2-s2.0-85138036287&origin=resultslist&sort=plf-f&src=s&sid=8ab82cb53aba57ca3c66932b009486e5&sot=b&sdt=b&s=TITLE-ABS-KEY%28464XLAT%29&sl=34&sessionSearchId=8ab82cb53aba57ca3c66932b009486e5&relpos=3)
+
+[17. Identification of the Possible Security Issues of the 464XLAT IPv6 Transition Technology](https://www.scopus.com/record/display.uri?eid=2-s2.0-85125310172&origin=resultslist&sort=plf-f&src=s&sid=8ab82cb53aba57ca3c66932b009486e5&sot=b&sdt=b&s=TITLE-ABS-KEY%28464XLAT%29&sl=34&sessionSearchId=8ab82cb53aba57ca3c66932b009486e5&relpos=5)
+
+[18. Testbed for the Security Analysis of the 464XLAT IPv6 Transition Technology in a Virtual Environment](https://www.scopus.com/record/display.uri?eid=2-s2.0-85115443522&origin=resultslist&sort=plf-f&src=s&sid=8ab82cb53aba57ca3c66932b009486e5&sot=b&sdt=b&s=TITLE-ABS-KEY%28464XLAT%29&sl=34&sessionSearchId=8ab82cb53aba57ca3c66932b009486e5&relpos=4)
+
 
 
 
