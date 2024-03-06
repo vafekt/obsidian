@@ -1,0 +1,8 @@
+- Knowledge of security systems including anti-virus applications, content filtering, firewalls, authentication systems, intrusion detection and notification systems.
+- Proficiency in networking technologies, network security and network monitoring solutions
+- Familiar with web-related technologies.
+- Knowledge of at least one development language (e.g. Python)
+- In-depth knowledge of security protocols, principles and best practices.
+- Experience with software development lifecycles and associated tooling (e.g. Git).
+- Prefer to have experience within cloud environments like AWS, GCP or Azure.
+- Prefer to have experience with audits and certification like SOC2 (or similar) and GDPR.
