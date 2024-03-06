@@ -47,11 +47,26 @@ Frame: DoS in DS-Lite
 		- Virtual machines
 	- Description of attacks and showing the effect
 		- Every attack in different positions
-		- DNS poisoning cache
+		- DNS attacks
+			- DDoS attacks
+			- DNS amplification attacks
+			- DNS hijacking
+			- DNS cache poisoning
+			- DNS tunneling
+			- NXDOMAIN attack
+		- DNS proxy
+			- Forgery Resilience
+			- Interface binding
+			- Packet filtering
+		- It can be DNS46, but I am not sure if this one exists or it uses tunneling
 		- NAT
+			- Reading port exhaustion to know how to flood
+			- 464XLAT
 		- PCP
 		- Neighbor Discovery
 		- Application attacks
+		- Tunnel
+			- 
 	- Applying the security (should be with graphs and images)
 		- ...
 		- Algorithms
