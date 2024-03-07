@@ -41,6 +41,10 @@
 
 [22. A queueing analysis for the denial of service (DoS) attacks in computer networks](https://www.scopus.com/record/display.uri?eid=2-s2.0-34250338058&origin=resultslist&sort=r-f&src=s&sid=0e2cca5a298909021e040d84e1931af7&sot=b&sdt=b&s=ALL%28DoS%29&sl=19&sessionSearchId=0e2cca5a298909021e040d84e1931af7&relpos=133)
 
+[23. Study of Network-Based DoS Attacks](https://www.scopus.com/record/display.uri?eid=2-s2.0-85051790133&origin=resultslist&sort=r-f&src=s&sid=0e2cca5a298909021e040d84e1931af7&sot=b&sdt=b&s=ALL%28DoS%29&sl=19&sessionSearchId=0e2cca5a298909021e040d84e1931af7&relpos=138)
+
+[24. Research on DoS Attack and Detection Programming](https://www.scopus.com/record/display.uri?eid=2-s2.0-77649295305&origin=resultslist&sort=r-f&src=s&sid=0e2cca5a298909021e040d84e1931af7&sot=b&sdt=b&s=ALL%28DoS%29&sl=19&sessionSearchId=0e2cca5a298909021e040d84e1931af7&relpos=152)
+
 
 
 
