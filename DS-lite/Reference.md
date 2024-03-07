@@ -45,6 +45,10 @@
 
 [24. Research on DoS Attack and Detection Programming](https://www.scopus.com/record/display.uri?eid=2-s2.0-77649295305&origin=resultslist&sort=r-f&src=s&sid=0e2cca5a298909021e040d84e1931af7&sot=b&sdt=b&s=ALL%28DoS%29&sl=19&sessionSearchId=0e2cca5a298909021e040d84e1931af7&relpos=152)
 
+[25. Vulnerable Delegation of DNS Resolution](https://www.scopus.com/record/display.uri?eid=2-s2.0-84884771929&origin=resultslist&sort=r-f&src=s&sid=0e2cca5a298909021e040d84e1931af7&sot=b&sdt=b&s=ALL%28dos+proxy%29&sl=19&sessionSearchId=0e2cca5a298909021e040d84e1931af7&relpos=151)
+
+
+
 
 
 
