@@ -1,4 +1,9 @@
 - Knowledge of security systems including anti-virus applications, content filtering, firewalls, authentication systems, intrusion detection and notification systems.
+	- Anti-virus application: 
+		- https://www.security.org/antivirus/how-does-antivirus-work/
+		- https://businesshelp.avast.com/Content/Products/AfB_Antivirus/ConfiguringSettings/ComponentOverview.htm
+	- Content filtering:
+		- 
 - Proficiency in networking technologies, network security and network monitoring solutions
 - Familiar with web-related technologies.
 - Knowledge of at least one development language (e.g. Python)
