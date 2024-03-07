@@ -3,11 +3,34 @@
 		- https://www.security.org/antivirus/how-does-antivirus-work/
 		- https://businesshelp.avast.com/Content/Products/AfB_Antivirus/ConfiguringSettings/ComponentOverview.htm
 	- Content filtering:
-		- 
+		- https://www.spiceworks.com/it-security/network-security/articles/what-is-content-filtering-definition-types-and-best-practices/
+	- Firewalls:
+		- https://www.fortinet.com/resources/cyberglossary/firewall
+		- https://docs.aws.amazon.com/network-firewall/latest/developerguide/getting-started.html
+		- https://www.cisco.com/en/US/docs/routers/access/800/850/software/configuration/guide/firewall.html
+	- Authentication system:
+		- https://testdriven.io/blog/web-authentication-methods/
+		- https://www.baeldung.com/cs/authentication-web-apps
+		- https://frontegg.com/blog/authentication
+	- Intrusion detection:
+		- https://www.youtube.com/watch?v=aAHax8jqr6U
+		- https://www.barracuda.com/support/glossary/intrusion-detection-system#:~:text=An%20intrusion%20detection%20system%20IDS,information%20and%20event%20management%20system.
+		- https://www.geeksforgeeks.org/intrusion-detection-system-ids/
+	- Notification system
+		- https://cyberpedia.reasonlabs.com/EN/notification%20system.html
+		- https://www.exabeam.com/explainers/siem/siem-alerts-understanding-security-information-and-event-alerts/
 - Proficiency in networking technologies, network security and network monitoring solutions
+	- Network security
+		- https://www.tutorialspoint.com/network_security/index.htm
+		- https://www.zluri.com/blog/network-security-tools/
+	- Network monitoring solutions
+		- https://thectoclub.com/tools/best-network-monitoring-software/
 - Familiar with web-related technologies.
+	- https://www.studysmarter.co.uk/explanations/computer-science/computer-network/web-technologies/
 - Knowledge of at least one development language (e.g. Python)
 - In-depth knowledge of security protocols, principles and best practices.
+	- https://www.bitdefender.com/cyberpedia/types-of-security-protocols/
+	- https://www.cs.vsb.cz/ochodkova/courses/kpb/cryptography-and-network-security_-principles-and-practice-7th-global-edition.pdf
 - Experience with software development lifecycles and associated tooling (e.g. Git).
 - Prefer to have experience within cloud environments like AWS, GCP or Azure.
 - Prefer to have experience with audits and certification like SOC2 (or similar) and GDPR.
