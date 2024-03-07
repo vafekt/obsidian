@@ -35,5 +35,14 @@
 	- Lifecycle
 		- https://stackify.com/what-is-sdlc/
 		- https://www.tutorialspoint.com/sdlc/sdlc_agile_model.htm
+		- https://linearb.io/blog/sdlc-tools
+	- Git
+		- https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository
 - Prefer to have experience within cloud environments like AWS, GCP or Azure.
+	- https://www.linkedin.com/pulse/securing-your-aws-environment-best-practices-cloud-operations-zbmlf/
 - Prefer to have experience with audits and certification like SOC2 (or similar) and GDPR.
+	- https://www.processunity.com/cybersecurity-certification-does-your-business-need/
+	- https://www.scrut.io/post/best-practices-for-soc-2-audit
+	- https://www.linkedin.com/pulse/best-practices-preparing-soc-2-audit-cyberarrow/
+	- https://maddevs.io/blog/free-and-paid-tools-to-prepare-for-soc-2-certification/
+	- https://www.strongdm.com/soc2/course/curriculum
