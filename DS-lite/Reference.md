@@ -35,7 +35,13 @@
 
 [19. A Survey of Man in the Middle Attacks](https://www.scopus.com/record/display.uri?eid=2-s2.0-84983732361&origin=resultslist&sort=cp-f&src=s&sid=0e2cca5a298909021e040d84e1931af7&sot=b&sdt=b&s=ALL%28dns+AND+proxy+AND+attack%29&sl=19&sessionSearchId=0e2cca5a298909021e040d84e1931af7&relpos=2)
 
-[20. ]
+[20. An analysis on DoS attack and defense technology](https://www.scopus.com/record/display.uri?eid=2-s2.0-84868099334&origin=resultslist&sort=r-f&src=s&sid=0e2cca5a298909021e040d84e1931af7&sot=b&sdt=b&s=ALL%28DoS%29&sl=19&sessionSearchId=0e2cca5a298909021e040d84e1931af7&relpos=122)
+
+[21. Frequency characteristics of DoS and DDoS attacks](https://www.scopus.com/record/display.uri?eid=2-s2.0-84880854468&origin=resultslist&sort=r-f&src=s&sid=0e2cca5a298909021e040d84e1931af7&sot=b&sdt=b&s=ALL%28DoS%29&sl=19&sessionSearchId=0e2cca5a298909021e040d84e1931af7&relpos=130)
+
+[22. A queueing analysis for the denial of service (DoS) attacks in computer networks](https://www.scopus.com/record/display.uri?eid=2-s2.0-34250338058&origin=resultslist&sort=r-f&src=s&sid=0e2cca5a298909021e040d84e1931af7&sot=b&sdt=b&s=ALL%28DoS%29&sl=19&sessionSearchId=0e2cca5a298909021e040d84e1931af7&relpos=133)
+
+
 
 
 
