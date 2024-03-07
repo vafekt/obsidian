@@ -32,5 +32,8 @@
 	- https://www.bitdefender.com/cyberpedia/types-of-security-protocols/
 	- https://www.cs.vsb.cz/ochodkova/courses/kpb/cryptography-and-network-security_-principles-and-practice-7th-global-edition.pdf
 - Experience with software development lifecycles and associated tooling (e.g. Git).
+	- Lifecycle
+		- https://stackify.com/what-is-sdlc/
+		- https://www.tutorialspoint.com/sdlc/sdlc_agile_model.htm
 - Prefer to have experience within cloud environments like AWS, GCP or Azure.
 - Prefer to have experience with audits and certification like SOC2 (or similar) and GDPR.
