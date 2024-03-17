@@ -97,7 +97,7 @@ AWS IAM (Identity and Access Management)
 - If the user has been assigned Access Keys, consider making them inactive (applied for compromised users)
 - Do not consider deleting them directly or access keys. Because if the keys are being used in an application, that application could be impacted
 - Review all policies that have been assigned to the user
-- Check Cloudtrail events
+- Check Cloudtrail events. This stores all AWS API events
 - After that, you can delete the user account and recreate it again
 	- If the user has long term access credentials, consider using IAM roles. Roles tend to use short term credentials which is much safer.
 - When using this service on AWS, you can see the details about users: Permission, Groups, Tags, Security credentials, Access Advisor
@@ -106,4 +106,64 @@ AWS IAM (Identity and Access Management)
 	- In Access advisor, you can see how often the user has used the permissions (Last accessed related to service name and policy type). Now we need to detach policy assigned to the user in Permissions tab.
 
 AWS EC2 (Elastic Block) Instances
+- You need to consider
+	- Install the only components required on the EC2 Instance. It can reduce the surface area of attacks
+	- Using host based protection software's
+	- Restrict access from networks to the instance
+	- Create a baseline server configuration and track changes against the server configuration
+	- Ensure to audit all changes to the EC2 instance
+- Controlling network access
+	- Try not to install instances on public subnet. The main architecture should always based on the private subnet.
+		![[Pasted image 20240317145743.png]]
+	- Control and monitor interactive access to EC2 Instances
+	- If users need access, provide access based on least privilege
+	- If an application on EC2 instance needs to access other AWS services, then consider assigning an IAM role to the EC2 Instance
+	- Consider encrypting data at rest and in transit
+	- Regular update the EC2 Instance
+	![[Pasted image 20240317150121.png]]
+- EC2 encryption
+	- After choosing AMI, and instance type. We configure parameters of instance.
+		![[Pasted image 20240317150352.png]]
+	- In Tags section, we create key-value pair
+	- In configuration security group, we se a firewall rules list.
+		![[Pasted image 20240317150501.png]]
+	- Now go to Key Pair and import public key and private key. These keys are created by you (with the use of Putty)
+	- Then we confirm parameters and launch instance. From remote access, you need to use SSH, so you need the key to connect.
+- Monitoring EC2 Instances
+	- You should check
+		- System status check
+			- Loss of network connectivity
+			- Loss of system power
+			- Software issues on the physical host
+			- Hardware issues on the physical host that impact network reachability
+		- Instance status check
+			- Failed system status check
+			- Exhasuted memory
+			- Corrupted file system
+			- Incompatible kernel
+			- Misconfigured networking or startup configuration
+	- The status checks are performed every minute. They return a pass or fail status. If one or more checks fails, the overall status retuned is bad.
+	- You can have CloudWatch to monitor your EC2 instance
+		![[Pasted image 20240317151916.png]]
+	- When any check fails, you can take the action
+		![[Pasted image 20240317152029.png]]
+	- You can watch the metrics in monitoring section
+		![[Pasted image 20240317152122.png]]
+
+Amazon GuardDuty
+- It is a continuous security monitoring service
+- This service analyses the following data sources
+	- VPC Flow Logs
+	- AWS Cloudtrail event logs
+	- DNS logs
+	- It is used to identify unexpected and potentially unauthorized or malicious activities from within AWS account.
+	- Does with the help of using existing threat intelligence feeds
+- The threats it can detect
+	- Escalation of privileges
+	- Uses of exposed credentials
+	- Communication with malicious IP's, URL's or domains
+	- Detect compromised EC2 instances having malware
+	- Can also detect unauthorized infrastructure deployments in AWS environment
+- We need to enable this service, it is a region specific resource. You can also invite other accounts to use this service. If you do this, your account becomes the master account. Others become member accounts. You can then get the findings of your member accounts
+	![[Pasted image 20240317154630.png]]
 - 
