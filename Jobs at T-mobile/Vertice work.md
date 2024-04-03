@@ -21,7 +21,6 @@
 - **Scripting Languages (Python, Bash):** Scripting skills can automate security tasks and analysis.
 - **Threat Modeling:** Understanding how to identify and mitigate potential security threats.
 
-
 **Security Systems:**
 - **Anti-virus applications:** Software that detects and removes malicious programs.
 - **Content filtering:** Blocks access to malicious or inappropriate websites/content.
