@@ -97,7 +97,7 @@ AWS IAM (Identity and Access Management)
 - If the user has been assigned Access Keys, consider making them inactive (applied for compromised users)
 - Do not consider deleting them directly or access keys. Because if the keys are being used in an application, that application could be impacted
 - Review all policies that have been assigned to the user
-- Check Cloudtrail events. This stores all AWS API events
+- Check Cloudtrail events. This stores all AWS API events0
 - After that, you can delete the user account and recreate it again
 	- If the user has long term access credentials, consider using IAM roles. Roles tend to use short term credentials which is much safer.
 - When using this service on AWS, you can see the details about users: Permission, Groups, Tags, Security credentials, Access Advisor
