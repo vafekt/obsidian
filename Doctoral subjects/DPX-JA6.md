@@ -41,4 +41,15 @@
 	- There has been a considerable fall in EU funding.
 	- There was a decrease of 30% in costs
 3. Linking
-- 
+	![[Pasted image 20240420013851.png]]
+- Contrasting
+	- to differentiate between A and B
+	- A differs from B in a certain respect
+	- A is different / can be distinguished from B
+	- Unlike / In contrast to B, A is cheap
+- Similarity
+	- A is similar to / equal to / like / no different from B
+	- A and B are alike / similar / identical
+	![[Pasted image 20240420015308.png]]
+	- 
+	- 
