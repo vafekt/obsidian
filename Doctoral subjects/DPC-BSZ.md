@@ -1,0 +1,31 @@
+1. Úvod do bezpečnosti vestavěných (embedded) systémů a odolných zařízení
+- Základní pojmy a terminologie
+	- Autentizace: proces ověření ID určité entity (člověk, stroj, proces)
+	- Autorizace: proces získávání souhlasu s provedením nějaké operace
+	- Kontrola přístupu: proces povolení nebo odepření k použití určitého zdroje (místo, materiál, data)
+	- Tamper-resistant: odolnost vůči manipulaci/narušení nějakého zařízení / součásti / čipu za účelem získání dat
+	- Tamper-evident: detekce pokusu o neautorizovaný přístup tj. manipulaci / narušení (slabší vlastnost než tamper-resistant)
+	- ISO 7498-2 poskytuje architekturu pro bezpečnost v Open System. Služby:
+		- Autentizace. 
+		- Řízení přístupu. 
+		- Důvěrnost– utajení dat před neautorizovanými entitami, např. šifrování AES. 
+		- Nepopiratelnost- ochrana proti odmítnutí původu zprávy (non-repudiation), např. digitální podpis RSA. 
+		- Integrita- neměnnost dat během přenosu či ukládání, např. HMAC
+	- Kryptosystémy
+		- Symetrické kryptosystémy
+			- Blokové šifry – AES, TDES, Camellia, Blowfish,… 
+			- Proudové šifry – ChaCha, Salsa,… 
+			- Autentizační kódy – HMAC, CMAC
+		- Asymetrické kryptosystémy
+			- Šifrování – RSA, ElGamal,… 
+			- Digitální podpis – RSA, ECDSA, EdDSA, DSA,… 
+			- Ustanovení klíče – ECDH, DH
+		- Další kryptografické funkce
+			- Generátory náhodných čísel – PRNG, TRNG,… 
+			- Hashfunkce – SHA-2, SHA-3, Whirpool,… 
+			- KeyDerivation Funkce – PBKDF2 (RFC 2898) založena na SHA-2
+	- Počítačová bezpečnost (kyberbezpečnost): udržování správných vlastností a služeb na počítačových systémech i v případě inteligentních útočníků (podoblasti SW bezpečnost, HW bezpečnost, síťová bezpečnost, sociální inženýrství)
+		- Hardwarová bezpečnost zabývá se chybami a útoky v hardwarové části počítačových systémů a možností ochran a detekcí útoků.
+		- Softwarová bezpečnost – oblast zabývající se jak útočník může využít/zneužít software a jak se bránit
+		- Síťová bezpečnost – zabývá se chybami a zranitelnostmi síťových protokolů, služeb a zařízení a navrhuje možná protiopatření, ochrany a detekce.
+	- 
