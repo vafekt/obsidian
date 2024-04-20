@@ -28,4 +28,37 @@
 		- Hardwarová bezpečnost zabývá se chybami a útoky v hardwarové části počítačových systémů a možností ochran a detekcí útoků.
 		- Softwarová bezpečnost – oblast zabývající se jak útočník může využít/zneužít software a jak se bránit
 		- Síťová bezpečnost – zabývá se chybami a zranitelnostmi síťových protokolů, služeb a zařízení a navrhuje možná protiopatření, ochrany a detekce.
-	- 
+	- TrustedPlatform Module (TPM)
+		- dedikovaný mikrokontrolér, který ukládá klíče a provádí kryptografické operace (šifrování, podpis, hash, …)
+		- Located in motherboard of PC
+		- provides secure storage that is exceptionally difficult to break because it is a separate component independent of the device’s operating system. So it is not vulnerable to any security risk in the OS itself or any software-based attacks. It is not vulnerable to physical attacks either; the TPM chip can tell if the hardware has been tampered with or removed and can be configured into a self-destruct mode against attacks.
+		- According to Microsoft, TPM has been shown to reduce malware attacks by 60% on tested devices. With the TPM technology onboard, you can use it to store biometrics data and ditch passwords completely.
+	- Kryptoprocesor
+		- dedikovaný / pomocný procesor pro vykonání kryptografických funkcí.
+	- SecureAccess Module (SAM) – založen na SmartCard technologii, jeho úkolem je poskytnout kryptografické funkce (autentizace) a bezpečné uložiště (typicky velikost SIM)
+	- Hardware Security Module (HSM) – výpočetní zařízení pro ukládání a správu klíčů pro silnou autentizaci, poskytuje i kryptografické operace.
+	- Postranní kanál nežádoucí způsob výměny informace mezi kryptografickým modulem a jeho okolím.
+		- Timing, energy, EM sniffing to attack.
+		- Ex: Attacking by listening to sound from telephone when tapping numbers
+	- Single points of Failure
+		- một sai sót hoặc trục trặc trong thiết kế hoặc vận hành có thể dẫn đến sự cố nghiêm trọng của toàn bộ hệ thống và mất mát tài sản sau đó.
+			- **Lưu trữ vật lý duy nhất**
+			- **Người giám sát tài chính duy nhất**
+		- část systémů, která v případě selhání zapříčiní selhaní celého systému nežádoucí pro systémy Fault-tolerant
+	- Reverzní inženýrství proces, jehož cílem je odkrýt princip fungování zkoumaného předmětu/kódu.
+- Úvod do bezpečnosti vestavěných systémů
+	- Definice: snižování zranitelností a zavádění ochran před hrozbami na vestavěných zařízeních a systémech
+	- Důležitými požadavky jsou spolehlivost (reliability) a dostupnost služby (availability)
+	- Příklady
+		- Průmyslové PC
+		- Výpočetní jednotky v automatizaci
+		- Systemon Chip(SoC)
+		- ATM, bankomaty o Multifunkční tiskárny
+	- Přístupové systémy (Access Control System)
+		- systém, sada komponentů a zařízení se specifickým HW a SW vybavením pro zajištění ochrany přístupu uživatelů ke chráněným prostorům
+		- Důležitý prvek: Autentizace
+		![[Pasted image 20240420143854.png]]
+		- Autentizaci lze kombinovat – vícefaktorová autentizace. 
+			- Dvoufaktorováautentizace – např. čip. karta + PIN. 
+			- Třífaktorováautentizace – např. čip. karta + PIN + detekce obličeje
+		- 
