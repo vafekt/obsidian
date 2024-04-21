@@ -111,3 +111,6 @@
 	- Hash funkce (Keccak, PHOTON, Quark, SPONGENT)
 	- MAC funkce (SipHash)
 	- Šifry poskytující autentizované šifrování (ACORN, Ascon, AESJAMBU, AES-OTR, CLOC
+	- Obecně je asymetrická kryptografie mnohem náročnější z pohledu času i paměti než symetrická kryptografie
+		- Přesto existují schémata jako ECC - ECDSA, NTRU
+- 
