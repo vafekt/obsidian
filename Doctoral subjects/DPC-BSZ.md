@@ -80,4 +80,5 @@
 			- Proudové šifry. 
 			- Hash funkce.
 		![[Pasted image 20240421170106.png]]
-		- 
+		- Metriky pro hardwary
+			- 
