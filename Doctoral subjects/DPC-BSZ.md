@@ -75,10 +75,19 @@
 		- Směr komunikace – jednosměrné vysílání / obousměrné vysílaní 
 	- Lehká kryptografie
 		- kryptografické metody, implementace, schémata, které jsou schopna běžet a zajistit bezpečnost na zařízeních s určitým omezením (lightweight)
-		- Nejčastěji se jedná o
+		- Nejčastěji se jedná o:
 			- Blokové šifry. 
 			- Proudové šifry. 
 			- Hash funkce.
 		![[Pasted image 20240421170106.png]]
-		- Metriky pro hardwary
-			- 
+		- Metriky pro hardware
+			- **GA (Gate Area)**: This metric measures the physical space occupied by logic gates on a chip
+			- **GE (Gate Equivalent)**: It represents the number of basic logic gates required to implement the functionality. NAND
+			- **LUT (Look-Up Table)**: It stores the output of a digital circuit for all possible input combinations (AND, OR), enabling efficient implementation of Boolean functions.
+			- **FF (Flip-Flop)**: a sequential logic circuit element that stores binary information. It captures the state of a digital signal at a particular moment and holds it until the next clock cycle. FFs are essential for implementing memory elements and synchronizing signals in digital systems.
+		- Parametry pro lehkou kryptografii
+		![[Pasted image 20240421192718.png]]
+		- Kompromis ceny, bezpečnosti a výkonu
+		![[Pasted image 20240421192755.png]]
+		- 
+		- 
