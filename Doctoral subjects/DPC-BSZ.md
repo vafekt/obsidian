@@ -113,4 +113,11 @@
 	- Šifry poskytující autentizované šifrování (ACORN, Ascon, AESJAMBU, AES-OTR, CLOC
 	- Obecně je asymetrická kryptografie mnohem náročnější z pohledu času i paměti než symetrická kryptografie
 		- Přesto existují schémata jako ECC - ECDSA, NTRU
-- 
+- Výkonnostní testy a metodologie měření kryptografických metod na omezených zařízeních
+	- Techniky a metodologie měření
+	![[Pasted image 20240421201503.png]]
+	![[Pasted image 20240421201635.png]]
+	![[Pasted image 20240421201656.png]]
+3. Autentizační systémy, technologie a protokoly
+4. 
+
