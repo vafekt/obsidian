@@ -89,5 +89,25 @@
 		![[Pasted image 20240421192718.png]]
 		- Kompromis ceny, bezpečnosti a výkonu
 		![[Pasted image 20240421192755.png]]
-		- 
-		- 
+		- Máme dvě možnosti pro implementace
+			- v SW: flexibilní, jednoduše přenášet a upravovat (jednoduchá změna délky bloků/klíčů atd.) – vhodná u chytrých zařízení s OS
+			- v HW: přináší vyšší rychlost a nižší požadavky na velikost kódu,  je často nasazována u senzorů a jiných zařízení, které jsou omezené v napájecím zdroji
+- Schémata a implementace lehké kryptografie
+	- Blokové šifry
+		- Ze klasické šifry (ARE, IDEA) se rozvíjí na lehké verze (mírně upraveno nebo nový)
+			- DESL ze DES s 1S-boxem na místo 8
+			- Nový: PRESENT (modifikace SPN-substitučně-permutační síti), SIMON (ARX šifry (operace sčítaní, rotace, XoR)), SPECK (ARX šifry (operace sčítaní, rotace, XoR)
+		- Parametry
+			- Menší délka bloku (typicky 64 – 80 bitů namísto 128 b). 
+			- Snížená délka klíče (např. 96 až 128 b). 
+			- Snížení náročnosti komponentů a operací (např. redukce počtu S-boxů a jejich velikosti)
+			- Implementace pouze nezbytných funkcí
+		- 3 hlavní metody vývoje
+			- Rozvinutá implementace - Velká paměťová velikost – mnoho zdrojů AREA/GE.
+			- Rundová implementace - Redukce počtu AREA/GE – snížení propustnosti.
+			- Sériová implementace - Neefektivní v poměru propustnost/zabrané zdroje, dále vyšší složitost.
+	- Proudové šifry
+		- (ChaCha20, Grain v1, MICKEY 2.0, Trivium)
+	- Hash funkce (Keccak, PHOTON, Quark, SPONGENT)
+	- MAC funkce (SipHash)
+	- Šifry poskytující autentizované šifrování (ACORN, Ascon, AESJAMBU, AES-OTR, CLOC
