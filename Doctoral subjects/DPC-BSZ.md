@@ -61,4 +61,23 @@
 		- Autentizaci lze kombinovat – vícefaktorová autentizace. 
 			- Dvoufaktorováautentizace – např. čip. karta + PIN. 
 			- Třífaktorováautentizace – např. čip. karta + PIN + detekce obličeje
+2. Lehká kryptografie pro výpočetně a paměťově omezená zařízení
+- Metody lehké kryptografie
+	- Zařízení mohou být omezená
+		- Výpočetně(procesor jen několik MHz)
+		- Paměťově(jednotky – desítky KB RAM, EEPROM)
+		- V napájecím zdroji– baterie – omezená životnost. 
+		- Programově(omezené API v rámci OS, např. u čip. karet)
+		- Funkčně–absence např. časovače, TRNG, chybějící periferie
+	- Komunikační protokoly mohou být omezené
+		- Maximální délka přenášené zprávy. 
+		- Maximální přenosová rychlost.
+		- Směr komunikace – jednosměrné vysílání / obousměrné vysílaní 
+	- Lehká kryptografie
+		- kryptografické metody, implementace, schémata, které jsou schopna běžet a zajistit bezpečnost na zařízeních s určitým omezením (lightweight)
+		- Nejčastěji se jedná o
+			- Blokové šifry. 
+			- Proudové šifry. 
+			- Hash funkce.
+		![[Pasted image 20240421170106.png]]
 		- 
