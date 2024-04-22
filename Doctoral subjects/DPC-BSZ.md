@@ -119,5 +119,5 @@
 	![[Pasted image 20240421201635.png]]
 	![[Pasted image 20240421201656.png]]
 3. Autentizační systémy, technologie a protokoly
-4. 
+- 
 
