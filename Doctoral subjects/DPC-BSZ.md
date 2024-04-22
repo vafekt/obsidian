@@ -119,5 +119,30 @@
 	![[Pasted image 20240421201635.png]]
 	![[Pasted image 20240421201656.png]]
 3. Autentizační systémy, technologie a protokoly
-- 
+- Typy autentizace a autentizační systémy a technologie
+	- Authentication refers to the process of verifying someone's (or something's) claimed identity
+	- **Knowledge-based Authentication:**
+		- Passwords
+		- PINs
+		- Security Questions, ZKP
+	- **Token-based Authentication:**
+		- This token acts like a temporary key that verifies your identity for a specific application or API.
+		- Mechanisms
+			- **User Login:** You provide your username and password to login.
+			- **Token Generation:** The server validates your credentials and, if successful, generates a unique token containing encrypted information about your identity and permissions.
+			- **Token Exchange:** The server sends the token back to you (usually stored securely or not securely on your device).
+			- **Subsequent Requests:** With each subsequent request to the application or API, you send the token instead of your username and password.
+			- **Token Validation:** The server receives the token, verifies its authenticity and validity (often with an expiration time), and grants access if everything checks out.
+	- **Biometric Authentication**
+		- This approach leverages unique physical or behavioral characteristics for verification, such as:
+		    - Fingerprint Scanners
+		    - Facial Recognition
+		    - Iris Scanners
+		    - Voice Recognition
+		    - Keystroke Dynamics (typing rhythm)
+	- **Multi-factor Authentication (MFA)**
+		- MFA strengthens security by combining two or more of the categories above. For instance, using a password along with a fingerprint scan for added security.
+	- Authentication can be one-way or both ways
+- AAA (Authentication, Authorization, and Accounting)
+	- 
 
