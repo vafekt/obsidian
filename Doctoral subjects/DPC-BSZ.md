@@ -140,6 +140,8 @@
 		    - Iris Scanners
 		    - Voice Recognition
 		    - Keystroke Dynamics (typing rhythm)
+	- **Certificate-based authentication**
+		- This method verifies the user’s or machine’s identity by using digital certificates. A digital certificate is an electronic document typically issued by a trusted third-party authority. They contain the user's digital identity, a public key, and the digital signature of the certification authority.
 	- **Multi-factor Authentication (MFA)**
 		- MFA strengthens security by combining two or more of the categories above. For instance, using a password along with a fingerprint scan for added security.
 	- Authentication can be one-way or both ways
@@ -183,5 +185,12 @@
 			- CAs **rely on** an established RoT for their own legitimacy. This could be a pre-programmed key stored in a secure hardware module (HSM) or a trusted boot process on the server issuing certificates.
 			- CAs then build a **chain of trust**. The RoT signs the root certificate of the CA, which in turn signs other certificates issued to websites, servers, or individuals. These certificates act as proof of identity in the digital world.
 			- CA is entity, RoT is just the initial point
-		- 
+	- Machine authentication
+		- Can be authentication of automated human-to-machine or machine-to-machine communication.
+		- H2M: přístupový systém, prokázání přístupu ke stroji /OS/ zařízení, PAN
+		- M2M: autentizační protokoly v počítačových sítích, WLAN, LAN/MAN,  IoT
+	- It can be offline authentication or online authentication
+	- Process of authentication (3 basic processes)
+	![[Pasted image 20240424000157.png]]
+	- 
 
