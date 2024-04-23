@@ -169,5 +169,19 @@
 		- **RADIUS (Remote Authentication Dial-In User Service):** A widely adopted protocol for network access control, primarily used for dial-up, VPN, and wireless connections.
 		- **Diameter:** A newer protocol designed for next-generation networks, supporting advanced features like mobility and real-time policy enforcement.
 	- Root of trust
+		- The Root of Trust (RoT) is the foundation for building trust within a security system. It's the initial point from which all other security measures derive their legitimacy.
+		- 2 types of RoT implementation
+			- **Hardware Security Modules (HSMs):** These are physical devices, often resembling small circuit boards. They are standalone units that can be connected to a server or network.
+				- Securely storing and managing cryptographic keys used for encryption and decryption.
+				- Performing high-performance cryptographic operations like signing and verifying digital signatures.
+				- Used in data centers
+			- **Trusted Platform Modules (TPMs):** These are embedded chips within devices like computers, securely storing encryption keys and ensuring platform integrity. You won't see a TPM itself, but it's a crucial component within your device.
+				- Securely storing and managing cryptographic keys used for encryption and decryption.
+				- Performing high-performance cryptographic operations like signing and verifying digital signatures.
+				- Used in personal PCs, laptops
+		- RoT vs CA (Certificate Authority)
+			- CAs **rely on** an established RoT for their own legitimacy. This could be a pre-programmed key stored in a secure hardware module (HSM) or a trusted boot process on the server issuing certificates.
+			- CAs then build a **chain of trust**. The RoT signs the root certificate of the CA, which in turn signs other certificates issued to websites, servers, or individuals. These certificates act as proof of identity in the digital world.
+			- CA is entity, RoT is just the initial point
 		- 
 
