@@ -144,5 +144,30 @@
 		- MFA strengthens security by combining two or more of the categories above. For instance, using a password along with a fingerprint scan for added security.
 	- Authentication can be one-way or both ways
 - AAA (Authentication, Authorization, and Accounting)
-	- 
+	- **Authentication (Who are you):**
+		- This is the initial step where a user's identity is verified. It involves presenting credentials such as:
+		    - Username and password combinations
+		    - Biometric scans (fingerprint, facial recognition)
+		    - Security tokens (hardware keys, software tokens)
+		- The chosen method depends on the security level required and user convenience
+	- **Authorization (What can you do):**
+		- Once identity is confirmed, authorization determines what level of access the user is granted. This could be:
+		    - Full access to all resources
+		    - Limited access to specific files or applications
+		    - Read-only access versus read-write access
+		- Authorization is typically based on pre-defined policies associated with user roles or groups.
+	- **Accounting (What did you do):**
+		- This final stage tracks user activity within the system. It logs information such as:
+		    - User login and logout times
+		    - Accessed resources (files, applications)
+		    - Actions performed (downloads, edits)
+		- Accounting data provides valuable insights for:
+		    - Security audits and identifying suspicious activity
+		    - Resource usage analysis and optimization
+		    - User behavior monitoring and compliance checks
+	- AAA protocols: Several protocols implement the AAA framework, acting as a communication language between network devices and the central AAA server.
+		- **RADIUS (Remote Authentication Dial-In User Service):** A widely adopted protocol for network access control, primarily used for dial-up, VPN, and wireless connections.
+		- **Diameter:** A newer protocol designed for next-generation networks, supporting advanced features like mobility and real-time policy enforcement.
+	- Root of trust
+		- 
 
