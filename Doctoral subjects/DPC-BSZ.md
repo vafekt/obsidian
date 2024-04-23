@@ -192,5 +192,18 @@
 	- It can be offline authentication or online authentication
 	- Process of authentication (3 basic processes)
 	![[Pasted image 20240424000157.png]]
-	- 
-
+- Scheme of authentication system
+![[Pasted image 20240424000430.png]]
+- OSDP protocol (Open Supervised Device Protocol)
+	- OSDP facilitates communication between a central security management system (like a control panel, terminal) and peripheral devices within an access control system. These peripheral devices include:
+		- **Card readers:** Used for swiping access cards or key fobs.
+		- **Keypads:** For entering PIN codes for access.
+		- **Biometric readers:** For fingerprint, facial recognition, or iris scan verification.
+		- **Locks:** Electronic door locks controlled by the system.
+	- OSDP supports secure communication with encryption, protecting sensitive data like access codes or user credentials from eavesdropping.
+		- Encryption: AES-128 of mode CBC
+		- Integrity CRC-16 and MAC
+	- OSDP can implement authentication mechanisms to verify the legitimacy of devices communicating with the control panel, preventing unauthorized access attempts.
+	- The protocol allows for continuous monitoring of connected devices, detecting potential malfunctions or tampering attempts.
+4. Autentizační protokoly a mechanismy pro spoje bod - bod
+- 
