@@ -1,0 +1,148 @@
+1. Úvod do bezpečnosti vestavěných (embedded) systémů a odolných zařízení
+- Základní pojmy a terminologie
+	- Autentizace: proces ověření ID určité entity (člověk, stroj, proces)
+	- Autorizace: proces získávání souhlasu s provedením nějaké operace
+	- Kontrola přístupu: proces povolení nebo odepření k použití určitého zdroje (místo, materiál, data)
+	- Tamper-resistant: odolnost vůči manipulaci/narušení nějakého zařízení / součásti / čipu za účelem získání dat
+	- Tamper-evident: detekce pokusu o neautorizovaný přístup tj. manipulaci / narušení (slabší vlastnost než tamper-resistant)
+	- ISO 7498-2 poskytuje architekturu pro bezpečnost v Open System. Služby:
+		- Autentizace. 
+		- Řízení přístupu. 
+		- Důvěrnost– utajení dat před neautorizovanými entitami, např. šifrování AES. 
+		- Nepopiratelnost- ochrana proti odmítnutí původu zprávy (non-repudiation), např. digitální podpis RSA. 
+		- Integrita- neměnnost dat během přenosu či ukládání, např. HMAC
+	- Kryptosystémy
+		- Symetrické kryptosystémy
+			- Blokové šifry – AES, TDES, Camellia, Blowfish,… 
+			- Proudové šifry – ChaCha, Salsa,… 
+			- Autentizační kódy – HMAC, CMAC
+		- Asymetrické kryptosystémy
+			- Šifrování – RSA, ElGamal,… 
+			- Digitální podpis – RSA, ECDSA, EdDSA, DSA,… 
+			- Ustanovení klíče – ECDH, DH
+		- Další kryptografické funkce
+			- Generátory náhodných čísel – PRNG, TRNG,… 
+			- Hashfunkce – SHA-2, SHA-3, Whirpool,… 
+			- KeyDerivation Funkce – PBKDF2 (RFC 2898) založena na SHA-2
+	- Počítačová bezpečnost (kyberbezpečnost): udržování správných vlastností a služeb na počítačových systémech i v případě inteligentních útočníků (podoblasti SW bezpečnost, HW bezpečnost, síťová bezpečnost, sociální inženýrství)
+		- Hardwarová bezpečnost zabývá se chybami a útoky v hardwarové části počítačových systémů a možností ochran a detekcí útoků.
+		- Softwarová bezpečnost – oblast zabývající se jak útočník může využít/zneužít software a jak se bránit
+		- Síťová bezpečnost – zabývá se chybami a zranitelnostmi síťových protokolů, služeb a zařízení a navrhuje možná protiopatření, ochrany a detekce.
+	- TrustedPlatform Module (TPM)
+		- dedikovaný mikrokontrolér, který ukládá klíče a provádí kryptografické operace (šifrování, podpis, hash, …)
+		- Located in motherboard of PC
+		- provides secure storage that is exceptionally difficult to break because it is a separate component independent of the device’s operating system. So it is not vulnerable to any security risk in the OS itself or any software-based attacks. It is not vulnerable to physical attacks either; the TPM chip can tell if the hardware has been tampered with or removed and can be configured into a self-destruct mode against attacks.
+		- According to Microsoft, TPM has been shown to reduce malware attacks by 60% on tested devices. With the TPM technology onboard, you can use it to store biometrics data and ditch passwords completely.
+	- Kryptoprocesor
+		- dedikovaný / pomocný procesor pro vykonání kryptografických funkcí.
+	- SecureAccess Module (SAM) – založen na SmartCard technologii, jeho úkolem je poskytnout kryptografické funkce (autentizace) a bezpečné uložiště (typicky velikost SIM)
+	- Hardware Security Module (HSM) – výpočetní zařízení pro ukládání a správu klíčů pro silnou autentizaci, poskytuje i kryptografické operace.
+	- Postranní kanál nežádoucí způsob výměny informace mezi kryptografickým modulem a jeho okolím.
+		- Timing, energy, EM sniffing to attack.
+		- Ex: Attacking by listening to sound from telephone when tapping numbers
+	- Single points of Failure
+		- một sai sót hoặc trục trặc trong thiết kế hoặc vận hành có thể dẫn đến sự cố nghiêm trọng của toàn bộ hệ thống và mất mát tài sản sau đó.
+			- **Lưu trữ vật lý duy nhất**
+			- **Người giám sát tài chính duy nhất**
+		- část systémů, která v případě selhání zapříčiní selhaní celého systému nežádoucí pro systémy Fault-tolerant
+	- Reverzní inženýrství proces, jehož cílem je odkrýt princip fungování zkoumaného předmětu/kódu.
+- Úvod do bezpečnosti vestavěných systémů
+	- Definice: snižování zranitelností a zavádění ochran před hrozbami na vestavěných zařízeních a systémech
+	- Důležitými požadavky jsou spolehlivost (reliability) a dostupnost služby (availability)
+	- Příklady
+		- Průmyslové PC
+		- Výpočetní jednotky v automatizaci
+		- Systemon Chip(SoC)
+		- ATM, bankomaty o Multifunkční tiskárny
+	- Přístupové systémy (Access Control System)
+		- systém, sada komponentů a zařízení se specifickým HW a SW vybavením pro zajištění ochrany přístupu uživatelů ke chráněným prostorům
+		- Důležitý prvek: Autentizace
+		![[Pasted image 20240420143854.png]]
+		- Autentizaci lze kombinovat – vícefaktorová autentizace. 
+			- Dvoufaktorováautentizace – např. čip. karta + PIN. 
+			- Třífaktorováautentizace – např. čip. karta + PIN + detekce obličeje
+2. Lehká kryptografie pro výpočetně a paměťově omezená zařízení
+- Metody lehké kryptografie
+	- Zařízení mohou být omezená
+		- Výpočetně(procesor jen několik MHz)
+		- Paměťově(jednotky – desítky KB RAM, EEPROM)
+		- V napájecím zdroji– baterie – omezená životnost. 
+		- Programově(omezené API v rámci OS, např. u čip. karet)
+		- Funkčně–absence např. časovače, TRNG, chybějící periferie
+	- Komunikační protokoly mohou být omezené
+		- Maximální délka přenášené zprávy. 
+		- Maximální přenosová rychlost.
+		- Směr komunikace – jednosměrné vysílání / obousměrné vysílaní 
+	- Lehká kryptografie
+		- kryptografické metody, implementace, schémata, které jsou schopna běžet a zajistit bezpečnost na zařízeních s určitým omezením (lightweight)
+		- Nejčastěji se jedná o:
+			- Blokové šifry. 
+			- Proudové šifry. 
+			- Hash funkce.
+		![[Pasted image 20240421170106.png]]
+		- Metriky pro hardware
+			- **GA (Gate Area)**: This metric measures the physical space occupied by logic gates on a chip
+			- **GE (Gate Equivalent)**: It represents the number of basic logic gates required to implement the functionality. NAND
+			- **LUT (Look-Up Table)**: It stores the output of a digital circuit for all possible input combinations (AND, OR), enabling efficient implementation of Boolean functions.
+			- **FF (Flip-Flop)**: a sequential logic circuit element that stores binary information. It captures the state of a digital signal at a particular moment and holds it until the next clock cycle. FFs are essential for implementing memory elements and synchronizing signals in digital systems.
+		- Parametry pro lehkou kryptografii
+		![[Pasted image 20240421192718.png]]
+		- Kompromis ceny, bezpečnosti a výkonu
+		![[Pasted image 20240421192755.png]]
+		- Máme dvě možnosti pro implementace
+			- v SW: flexibilní, jednoduše přenášet a upravovat (jednoduchá změna délky bloků/klíčů atd.) – vhodná u chytrých zařízení s OS
+			- v HW: přináší vyšší rychlost a nižší požadavky na velikost kódu,  je často nasazována u senzorů a jiných zařízení, které jsou omezené v napájecím zdroji
+- Schémata a implementace lehké kryptografie
+	- Blokové šifry
+		- Ze klasické šifry (ARE, IDEA) se rozvíjí na lehké verze (mírně upraveno nebo nový)
+			- DESL ze DES s 1S-boxem na místo 8
+			- Nový: PRESENT (modifikace SPN-substitučně-permutační síti), SIMON (ARX šifry (operace sčítaní, rotace, XoR)), SPECK (ARX šifry (operace sčítaní, rotace, XoR)
+		- Parametry
+			- Menší délka bloku (typicky 64 – 80 bitů namísto 128 b). 
+			- Snížená délka klíče (např. 96 až 128 b). 
+			- Snížení náročnosti komponentů a operací (např. redukce počtu S-boxů a jejich velikosti)
+			- Implementace pouze nezbytných funkcí
+		- 3 hlavní metody vývoje
+			- Rozvinutá implementace - Velká paměťová velikost – mnoho zdrojů AREA/GE.
+			- Rundová implementace - Redukce počtu AREA/GE – snížení propustnosti.
+			- Sériová implementace - Neefektivní v poměru propustnost/zabrané zdroje, dále vyšší složitost.
+	- Proudové šifry
+		- (ChaCha20, Grain v1, MICKEY 2.0, Trivium)
+	- Hash funkce (Keccak, PHOTON, Quark, SPONGENT)
+	- MAC funkce (SipHash)
+	- Šifry poskytující autentizované šifrování (ACORN, Ascon, AESJAMBU, AES-OTR, CLOC
+	- Obecně je asymetrická kryptografie mnohem náročnější z pohledu času i paměti než symetrická kryptografie
+		- Přesto existují schémata jako ECC - ECDSA, NTRU
+- Výkonnostní testy a metodologie měření kryptografických metod na omezených zařízeních
+	- Techniky a metodologie měření
+	![[Pasted image 20240421201503.png]]
+	![[Pasted image 20240421201635.png]]
+	![[Pasted image 20240421201656.png]]
+3. Autentizační systémy, technologie a protokoly
+- Typy autentizace a autentizační systémy a technologie
+	- Authentication refers to the process of verifying someone's (or something's) claimed identity
+	- **Knowledge-based Authentication:**
+		- Passwords
+		- PINs
+		- Security Questions, ZKP
+	- **Token-based Authentication:**
+		- This token acts like a temporary key that verifies your identity for a specific application or API.
+		- Mechanisms
+			- **User Login:** You provide your username and password to login.
+			- **Token Generation:** The server validates your credentials and, if successful, generates a unique token containing encrypted information about your identity and permissions.
+			- **Token Exchange:** The server sends the token back to you (usually stored securely or not securely on your device).
+			- **Subsequent Requests:** With each subsequent request to the application or API, you send the token instead of your username and password.
+			- **Token Validation:** The server receives the token, verifies its authenticity and validity (often with an expiration time), and grants access if everything checks out.
+	- **Biometric Authentication**
+		- This approach leverages unique physical or behavioral characteristics for verification, such as:
+		    - Fingerprint Scanners
+		    - Facial Recognition
+		    - Iris Scanners
+		    - Voice Recognition
+		    - Keystroke Dynamics (typing rhythm)
+	- **Multi-factor Authentication (MFA)**
+		- MFA strengthens security by combining two or more of the categories above. For instance, using a password along with a fingerprint scan for added security.
+	- Authentication can be one-way or both ways
+- AAA (Authentication, Authorization, and Accounting)
+	- 
+
