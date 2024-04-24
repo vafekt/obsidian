@@ -11,8 +11,12 @@
             "id": "e5a14c097b7eca99",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Doctoral subjects/DPC-BSZ.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Doctoral subjects/DPC-BSZ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Doctoral subjects/DPC-BSZ.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Doctoral subjects/DPC-BSZ.md"
+              }
             }
           }
         ]
@@ -139,5 +147,20 @@
     }
   },
   "active": "e5a14c097b7eca99",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "Full stack developer/images/Pasted image 20240421201656.png",
+    "Full stack developer/images/Pasted image 20240421201635.png",
+    "Full stack developer/images/Pasted image 20240421201503.png",
+    "Full stack developer/images/Pasted image 20240421192755.png",
+    "Full stack developer/images/Pasted image 20240421192718.png",
+    "Full stack developer/images/Pasted image 20240421170106.png",
+    "Full stack developer/images/Pasted image 20240420143854.png",
+    "Full stack developer/images/Pasted image 20240420015308.png",
+    "Full stack developer/images/Pasted image 20240420013851.png",
+    "Full stack developer/images/Pasted image 20240419235046.png",
+    "Full stack developer/images/Pasted image 20240419231032.png",
+    "Doctoral subjects/DPX-JA6.md",
+    "Doctoral subjects/DPC-BSZ.md",
+    "Doctoral subjects"
+  ]
 }
