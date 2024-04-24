@@ -269,8 +269,34 @@
 		![[Pasted image 20240424222135.png]]
 		![[Pasted image 20240424222209.png]]
 - Autentizační protokoly a mechanismy pro čipové karty a moduly SAM
-	- 
-
+	- Autentizační protokoly využívají většinou standardních kryptografických schémat (TDES, AES, RSA, atd.).
+	- U levných čip. karet je snahou sestavovat aut. protokoly založené na symetrické kryptografii a jednoduchých operací – omezený klíčový management
+	- Mezi základní bezpečnostní požadavky patří
+		- Jednostranná autentizace.
+		- Odolnost proti padělání.
+		- Odolnost proti útoku paralelní relace. SCHÉMAT 
+		- Odolnost proti útoku zopakování zprávy (v a.j. Replay attack). 
+		- Odolnost proti kompromitaci ověřovatele. 
+		- Odolnost proti kompromitaci serveru. 
+		- Odolnost proti útokům odepření služeb. 
+		- Odolnost proti offline hádání hesla/tajemství
+	- Nadstandardní bezpečnostní požadavky: 
+		- Vzájemná autentizace. 
+		- Odolnost proti útoku při ztrátě karty. 
+		- Zpětné zabezpečení (v a.j. Perfect forward secrecy). 
+		- Ustanovení klíče. 
+		- Zajištění uživatelské anonymity. 
+		- Odolnost proti útoku zevnitř.
+	- Útoky
+		- MIFARE CRYPTO 1: Malá velikost klíče - 48 bitů útok hrubou silou, cca 4 roky na PC,  minuty na FPGA.
+	- Protokol PACE (Password Authenticated Connection Establishment)
+		- Protokol pro bezpečné ustanovení šifrovacích klíčů při znalosti správného hesla pro následnou zabezpečenou komunikaci.
+		- PACE protokol využívá hash funkce, symetrickou kryptografii, eliptické křivky v kombinaci s Diffie-Hellman algoritmem a autentizační kódy MAC. 
+		- Heslo zadává uživatel pak na čtečce.
+	- Protokol EAC (Extended Access Control)
+		![[Pasted image 20240424223905.png]]
+		![[Pasted image 20240424223919.png]]
+5. 
 
 
 
