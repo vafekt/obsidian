@@ -267,7 +267,10 @@
 		![[Pasted image 20240424221857.png]]
 	- Augmented PAKE (klient/server komunikace, kdy server nezná hesla, ale např. jen hash z hesla
 		![[Pasted image 20240424222135.png]]
-	- 
+		![[Pasted image 20240424222209.png]]
+
+
+
 
 
 
