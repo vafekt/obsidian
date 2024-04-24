@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "c25334a1044ddb33",
@@ -146,8 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e5a14c097b7eca99",
+  "active": "991da61915d14a1c",
   "lastOpenFiles": [
+    "Full stack developer/images/Pasted image 20240424131833.png",
+    "Full stack developer/images/Pasted image 20240424000430.png",
+    "Full stack developer/images/Pasted image 20240424000157.png",
     "Full stack developer/images/Pasted image 20240421201656.png",
     "Full stack developer/images/Pasted image 20240421201635.png",
     "Full stack developer/images/Pasted image 20240421201503.png",
@@ -156,9 +159,6 @@
     "Full stack developer/images/Pasted image 20240421170106.png",
     "Full stack developer/images/Pasted image 20240420143854.png",
     "Full stack developer/images/Pasted image 20240420015308.png",
-    "Full stack developer/images/Pasted image 20240420013851.png",
-    "Full stack developer/images/Pasted image 20240419235046.png",
-    "Full stack developer/images/Pasted image 20240419231032.png",
     "Doctoral subjects/DPX-JA6.md",
     "Doctoral subjects/DPC-BSZ.md",
     "Doctoral subjects"
