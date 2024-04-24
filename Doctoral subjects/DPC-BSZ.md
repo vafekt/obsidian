@@ -140,9 +140,70 @@
 		    - Iris Scanners
 		    - Voice Recognition
 		    - Keystroke Dynamics (typing rhythm)
+	- **Certificate-based authentication**
+		- This method verifies the user’s or machine’s identity by using digital certificates. A digital certificate is an electronic document typically issued by a trusted third-party authority. They contain the user's digital identity, a public key, and the digital signature of the certification authority.
 	- **Multi-factor Authentication (MFA)**
 		- MFA strengthens security by combining two or more of the categories above. For instance, using a password along with a fingerprint scan for added security.
 	- Authentication can be one-way or both ways
 - AAA (Authentication, Authorization, and Accounting)
-	- 
-
+	- **Authentication (Who are you):**
+		- This is the initial step where a user's identity is verified. It involves presenting credentials such as:
+		    - Username and password combinations
+		    - Biometric scans (fingerprint, facial recognition)
+		    - Security tokens (hardware keys, software tokens)
+		- The chosen method depends on the security level required and user convenience
+	- **Authorization (What can you do):**
+		- Once identity is confirmed, authorization determines what level of access the user is granted. This could be:
+		    - Full access to all resources
+		    - Limited access to specific files or applications
+		    - Read-only access versus read-write access
+		- Authorization is typically based on pre-defined policies associated with user roles or groups.
+	- **Accounting (What did you do):**
+		- This final stage tracks user activity within the system. It logs information such as:
+		    - User login and logout times
+		    - Accessed resources (files, applications)
+		    - Actions performed (downloads, edits)
+		- Accounting data provides valuable insights for:
+		    - Security audits and identifying suspicious activity
+		    - Resource usage analysis and optimization
+		    - User behavior monitoring and compliance checks
+	- AAA protocols: Several protocols implement the AAA framework, acting as a communication language between network devices and the central AAA server.
+		- **RADIUS (Remote Authentication Dial-In User Service):** A widely adopted protocol for network access control, primarily used for dial-up, VPN, and wireless connections.
+		- **Diameter:** A newer protocol designed for next-generation networks, supporting advanced features like mobility and real-time policy enforcement.
+	- Root of trust
+		- The Root of Trust (RoT) is the foundation for building trust within a security system. It's the initial point from which all other security measures derive their legitimacy.
+		- 2 types of RoT implementation
+			- **Hardware Security Modules (HSMs):** These are physical devices, often resembling small circuit boards. They are standalone units that can be connected to a server or network.
+				- Securely storing and managing cryptographic keys used for encryption and decryption.
+				- Performing high-performance cryptographic operations like signing and verifying digital signatures.
+				- Used in data centers
+			- **Trusted Platform Modules (TPMs):** These are embedded chips within devices like computers, securely storing encryption keys and ensuring platform integrity. You won't see a TPM itself, but it's a crucial component within your device.
+				- Securely storing and managing cryptographic keys used for encryption and decryption.
+				- Performing high-performance cryptographic operations like signing and verifying digital signatures.
+				- Used in personal PCs, laptops
+		- RoT vs CA (Certificate Authority)
+			- CAs **rely on** an established RoT for their own legitimacy. This could be a pre-programmed key stored in a secure hardware module (HSM) or a trusted boot process on the server issuing certificates.
+			- CAs then build a **chain of trust**. The RoT signs the root certificate of the CA, which in turn signs other certificates issued to websites, servers, or individuals. These certificates act as proof of identity in the digital world.
+			- CA is entity, RoT is just the initial point
+	- Machine authentication
+		- Can be authentication of automated human-to-machine or machine-to-machine communication.
+		- H2M: přístupový systém, prokázání přístupu ke stroji /OS/ zařízení, PAN
+		- M2M: autentizační protokoly v počítačových sítích, WLAN, LAN/MAN,  IoT
+	- It can be offline authentication or online authentication
+	- Process of authentication (3 basic processes)
+	![[Pasted image 20240424000157.png]]
+- Scheme of authentication system
+![[Pasted image 20240424000430.png]]
+- OSDP protocol (Open Supervised Device Protocol)
+	- OSDP facilitates communication between a central security management system (like a control panel, terminal) and peripheral devices within an access control system. These peripheral devices include:
+		- **Card readers:** Used for swiping access cards or key fobs.
+		- **Keypads:** For entering PIN codes for access.
+		- **Biometric readers:** For fingerprint, facial recognition, or iris scan verification.
+		- **Locks:** Electronic door locks controlled by the system.
+	- OSDP supports secure communication with encryption, protecting sensitive data like access codes or user credentials from eavesdropping.
+		- Encryption: AES-128 of mode CBC
+		- Integrity CRC-16 and MAC
+	- OSDP can implement authentication mechanisms to verify the legitimacy of devices communicating with the control panel, preventing unauthorized access attempts.
+	- The protocol allows for continuous monitoring of connected devices, detecting potential malfunctions or tampering attempts.
+4. Autentizační protokoly a mechanismy pro spoje bod - bod
+- 
