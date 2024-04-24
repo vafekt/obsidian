@@ -260,4 +260,19 @@
 	- JPAKE (Password Authenticated Key Exchange by Juggling)
 		- **Password Authenticated Key Exchange by Juggling(J-PAKE)** is a _password-authenticated key agreement(PAKE)_ protocol without requiring **Public Key Infrastructure(PKI)** for authentication. _J-PAKE_ is able to establish a private and authenticated channel on top of an insecure network solely based on a shared password.
 		- _J-PAKE_ use [_Zero-Knowledge Proof_](https://chunminchang.gitbooks.io/j-pake-over-tls/content/appendix/zkp/zkp.html "Zero-Knowledge Proof") to produce valid knowledge proof of a discrete logarithm without revealing it. One example is to use [Schnorr digital signature](https://chunminchang.gitbooks.io/j-pake-over-tls/content/appendix/zkp/schnorr_signature.html "Schnorr signature"), which is a non-interactive protocol.
-		- 
+		![[Pasted image 20240424211124.png]]
+		![[Pasted image 20240424211731.png]]
+		![[Pasted image 20240424211918.png]]
+		![[Pasted image 20240424220802.png]]
+
+
+
+
+
+
+
+
+
+
+
+
