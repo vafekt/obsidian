@@ -250,4 +250,14 @@
 		- The client verifies the server's certificate and sends its own digital certificate to the server. This certificate verifies the client's identity (user or device).
 		- Both the client and server establish a secure TLS session using encryption keys derived from their respective certificates.
 - PAKE (Password-Authenticated Key Exchange)
-	- 
+	- PAKE (Password-Authenticated Key Exchange) is a cryptographic protocol designed to establish a secure communication channel between two parties based solely on their knowledge of a shared password. This eliminates the need for pre-distributed keys or certificates, making it a convenient and efficient solution for certain scenarios.
+	- Advantages: Traditional methods transmit passwords during authentication, but i can be vulnerable to breaches. So this method overcomes by using DH Key Exchange
+	- Principles
+		- **Diffie-Hellman Key Exchange (Foundation):** PAKE leverages the Diffie-Hellman key exchange concept, where two parties publicly exchange random values to derive a shared secret key without needing a pre-shared secret.
+		- **Challenge-Response Mechanism:** Each party generates a random challenge and sends it to the other party. These challenges are used in conjunction with the password to compute responses.
+		- **Verification of Password Knowledge:** The responses exchanged during the challenge-response mechanism implicitly verify that both parties know the correct password.
+		    - Even though the actual password is not transmitted, the responses mathematically depend on the password, ensuring only parties with the correct password can compute valid responses.
+	- JPAKE (Password Authenticated Key Exchange by Juggling)
+		- **Password Authenticated Key Exchange by Juggling(J-PAKE)** is a _password-authenticated key agreement(PAKE)_ protocol without requiring **Public Key Infrastructure(PKI)** for authentication. _J-PAKE_ is able to establish a private and authenticated channel on top of an insecure network solely based on a shared password.
+		- _J-PAKE_ use [_Zero-Knowledge Proof_](https://chunminchang.gitbooks.io/j-pake-over-tls/content/appendix/zkp/zkp.html "Zero-Knowledge Proof") to produce valid knowledge proof of a discrete logarithm without revealing it. One example is to use [Schnorr digital signature](https://chunminchang.gitbooks.io/j-pake-over-tls/content/appendix/zkp/schnorr_signature.html "Schnorr signature"), which is a non-interactive protocol.
+		- 
