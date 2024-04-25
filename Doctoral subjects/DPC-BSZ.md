@@ -398,6 +398,25 @@
 		- Meet in the Middle: 
 		![[Pasted image 20240425102625.png]]
 6. Programovatelné čipové karty
+- Popis
+	- Chytré čipové karty (CPU+paměť + KARTY bezpečnostní funkce) – smartkarty– hostí aplikaci/e
+	- Programovatelné čip. karty umožňují tvorbu vlastních aplikací a liší se podle OS/platformy, např.: 
+		- JAVA Smart Cards, .NET Smart Cards (C#), MultOS (jazyk C), BASIC…
+	- Rozsáhlé data se ukládají spíše na server – karta nese jen základní aplikační logiku a autentizační informace k účtu (tajné a privátní klíče) – útočník musí pak útočit přímo na kartu.
+- Protokol přenosu dat mezi čtečkou a čip. kartou
+	- APDU (Application Protocol Data Unit)
+	- The ISO/IEC 7816 standard defines a set of commands and instructions that can be used to interact with smart cards. These commands cover a wide range of operations such as reading data from the card, writing data to the card, verifying PIN codes, and executing cryptographic algorithms.
+	- The APDU protocol includes mechanisms for ensuring the security of communication between the card reader and the smart card. This includes features such as authentication, encryption, and integrity checks to prevent unauthorized access and tampering of data.
+- Platforma JAVA Card
+	- nejrozšířenější platforma programovatelných karet, např. ATM karty, SIM karty
+	- JAVA applety mohou běžet na různých smart kartách, které poskytují JAVA Card OS přenositelnost.
+- Platforma MultOS Card
+	- Programovatelné čipové karty MultOS- multi-application smart card operating system. •
+	- Podpora více aplikací na kartě. Podpora standardů ISO 7816, EMV. 
+	- Bezpečný ekosystém pro vydávání aplikací a karet. 
+	- Vývoj v C, JAVA, asembleru, kompilace do MULTOS Executable Language (MEL)  - Reduced Instruction Set Computer (RISC)
+- Platforma BASIC Card a .NET Card
+7. Reverzní inženýrství a softwarová bezpečnost 
 - 
 
 
