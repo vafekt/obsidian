@@ -297,7 +297,62 @@
 		![[Pasted image 20240424223905.png]]
 		![[Pasted image 20240424223919.png]]
 5. Autentizační předměty a zabezpečené hardwarové moduly
-- 
+- Autentizační předměty
+	- Definice
+		- předměty používané uživateli v rámci autentizace při žádosti o přístup do systému.
+		- Karta, klíčenka
+		- Autentizace předmětem je často kombinováno s autentizací znalostí (PIN, heslo) nebo autentizací biometrikou (otisk prstu) za účelem zvýšení bezpečnosti přístupového systému.
+	- Předměty musí být chráněny proti falzifikaci a klonování.
+	- Používáme RFID Tagy (čip): Radio Frequency Identification, identifikace na rádiové frekvenci (RFID) – slouží k identifikaci zboží, předmětů, strojů, zvířat, lidí
+		- Pasivní Tag
+			- RFID tag přijímá energii od vysílače (nabíjí se napájecí kondenzátor) a odesílá odpověď (číslo EPC + další data) – systémy Active Reader Passive Tag (ARPT)– nízké náklady (desítky korun)
+		- Aktivní Tag
+			- RFID tagmá vlastní zdroj (baterie) a může sám aktivně vysílat, často větší paměť a kryptoprocesor (AES, TDES, RSA, SHA), použito v aktivní lokalizaci - Active Reader Active Tag (ARAT)– (cena: sto a více korun).
+		- RFID nesou 96-bitové unikátní číslo EPC (Electronic Product Code)
+		- Výrobní třídy tagů– zápis dat
+			- Class0 –read-only, data jsou zapsána při výrobě.
+			- Class1 -One-Time Programmable(OTP), data lze jednorázově zapsat na TAG. 
+			- Class1 GEN2 –data lze zapsat, TAG lze uzamknout proti dalšímu zápisu, obsahuje i CRC kontrolu.
+		- Útoky
+			![[Pasted image 20240425093934.png]]
+		- Tyhle útoky řešil EPC Gen 2
+			- Skrytí tagu – pouze oprávněné čtečky mohou načíst data a detekovat tag
+			- Šifrování dat – od gen 2 verze 2, AES-128 a Grain-128A (staticky zašifrovaný obsah).
+	- Čipové karty
+		- Integrated Circuit Card (ICC) - slouží jako autentizační předměty uživatele nebo jako nosiče aplikací
+		- Použití
+			- Přístup do chráněných prostor. 
+			- Platby, EMV (Europay, MasterCard,Visa) karty. 
+			- E-ticketing. 
+			- Debitní karty.
+		- Typy
+			- Paměťové–integrovaný obvod (ukládání dat a volitelné zabezpečující mechanismy), 
+			- procesorové–paměťové +procesor (Smart karty), 
+			- kryptografické– procesorové + kryptografický koprocesor (RSA, AES, SHA,…), 
+			- programovatelné– (JAVA Smart Cards, .NET Smart Cards, MultOS,…) – více viz další přednáška.
+		- Komunikační rozhraní
+			- Kontaktní
+			- Bezkontaktní
+			- Hybridní
+		- Útoky
+			- Odposlech dat u bezkontaktního rozhraní – šifrování komunikace mezi čtečkou a kartou. 
+			- Falešná čtečka/ověřovatel – nutnost vzájemné autentizace. 
+			- Falešná karta/uživatel – karta nesmí být snadno klonovatelná či snadno padělatelná – bezpečná autentizace, dobrá HW ochrana. 
+			- Útoky zneužívající slabé klíče a špatně vygenerované náhodné čísla zvýšení kvality generování klíčů či hodnot – externí generování klíčů. 
+			- Invazivní útoky a útoky postranními kanály – SW a HW ochranné metody jako např. přidání tzv. dummy funkcí, počítaní v konstantním čase atp.
+	- USB tokeny
+		- USB kontakt, někdy i LCD displej. 
+		- Parametry = flash disk / smart card 
+		- Úložiště (chráněné): ‐ soukromé klíče,‐ certifikátů,‐ jednorázové hesla OTP (data+čas), ‐ licenčního kódu,‐ tajných dat pro výzva/odpověď.
+	- Mobilní telefony
+		- Výpočetní výkonost je mnohem vyšší než smart karty. 
+		- Problém s chráněným uložištěm (tzv. secure element). 
+		- Vývoj e-payment, autentizačních aplikací.
+		- Pomocí telefonu s NFC lze číst bezkontaktní čipové karty -> telefon jako čtečka 
+		- Anténa na zadním krytu či na baterce.
+	- Mobilní telefony s NFC – větší riziko výskytu malware a dalších bezpečnostních problémů než u omezených čipových karet.
+- Zabezpečené hardwarové moduly
+	- 
 
 
 
