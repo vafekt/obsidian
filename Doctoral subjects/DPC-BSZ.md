@@ -296,7 +296,8 @@
 	- Protokol EAC (Extended Access Control)
 		![[Pasted image 20240424223905.png]]
 		![[Pasted image 20240424223919.png]]
-5. 
+5. Autentizační předměty a zabezpečené hardwarové moduly
+- 
 
 
 
