@@ -373,7 +373,25 @@
 	- Trusted Platform Module (TPM)
 		- zabezpečený kryptoprocesor– čip, který je montován k základní desce u téměř většině počítačů, notebooků a i mnoha mobilů, set top boxů, konzolí atd
 		- Účel
-			- 
+			- zajistit integritu platformy (OS), společně s BIOSem (režim UEFI) tvoří tzv. Root of trust – kořen důvěry – bezpečný start OS, 
+			- generování šifrovacích klíčů a jejich uložiště, 
+			- uložení jedinečného soukromého klíče RSA a dalších klíčů a certifikátů, o provádění kryptografických funkcí, 
+			- vzdálené ověření (Remote attestation) HW a SW konfigurace a jejich změn u autorizovaných partnerů (třetích stran), 
+			- pomáhá ukládat klíče pro šifrování data na disku (Bitlocker), 
+			- pomáhá při autentizaci v kombinaci s technologií VSC (Virtual Smart Card)
+			- pomáhá chránit hesla a proti malware,
+			![[Pasted image 20240425102035.png]]
+		- Implementace TPM 2.0
+			![[Pasted image 20240425102229.png]]
+			- DiskrétníTPM - dedikované tamper-resistant čipy. Nejvíce bezpečné.
+			- IntegrovanýTPM- součást jiného čipu. HW odolný SW zranitelnostem. Např.. Intel chipset s TPM. 
+			- Firmware TPM-software-only řešenípro běh CPU's v důvěrném prostředí. Mohou být vystaveny SW zranitelnostem. Např. AMD, Intel Platform Trust (PTT), Qualcomm TPMs. 
+			- Software TPM-software emulator TPM, který běží ve více chraněném režimu než běžné programy na OS.  Nejsou příliš bezpečné, náchylné na útoky a SW zranitelnosti. 
+			- Virtualní TPM –běžící v hypervisoru. Podobné jako Firmware TPM.
+		- Útoky
+			- TPM-v 2015 Snowden odhalil, že tajné klíče na TPM bylo možné získat pomocí diferenční proudovou analýzou postranním kanálem.
+	- Hardware Security Module (HSM) - hardwarový bezpečnostní modul
+		- 
 
 
 
