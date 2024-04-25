@@ -391,6 +391,12 @@
 		- Útoky
 			- TPM-v 2015 Snowden odhalil, že tajné klíče na TPM bylo možné získat pomocí diferenční proudovou analýzou postranním kanálem.
 	- Hardware Security Module (HSM) - hardwarový bezpečnostní modul
+		- Jedná se fyzickou výpočetní jednotku určenou pro management klíčů, silnou autentizaci, PKCS#11 a provádění kryptografických operací (RSA, ECIES, ECDSA, AES,…). o Plug-in karty nebo externí zařízení připojené k PC či serveru (nejedná se tedy o chip jako TPM).
+		- Obsahuje vlastní paměťové moduly a bezpečný kryptoprocesor, který je tamper-resistant, senzory detekce průniku.
+		![[Pasted image 20240425102520.png]]
+	- Útoky
+		- Meet in the Middle: 
+		![[Pasted image 20240425102625.png]]
 		- 
 
 
