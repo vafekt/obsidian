@@ -397,7 +397,8 @@
 	- Útoky
 		- Meet in the Middle: 
 		![[Pasted image 20240425102625.png]]
-		- 
+6. Programovatelné čipové karty
+- 
 
 
 
