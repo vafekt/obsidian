@@ -352,7 +352,28 @@
 		- Anténa na zadním krytu či na baterce.
 	- Mobilní telefony s NFC – větší riziko výskytu malware a dalších bezpečnostních problémů než u omezených čipových karet.
 - Zabezpečené hardwarové moduly
-	- 
+	- Subscriber Identity Module SIM
+		- integrovaný obvod s OS, pamětí a čipem pro bezpečné uložení čísla IMSI (International Mobile Subscriber Identity), 128-bitového klíče uživatele Authentication Key (Ki) a dalších parametrů.
+		- Hlavní účel je autentizace uživatele s mobilním telefonem v 3 – 5G sítích
+		- Složení IMSI: 
+			- První 3 digity tvoří Mobile Country Code (MCC), 
+			- Další 2 až 3 digity tvoří  Mobile Network Code (MNC), 
+			- Zbývají tvoří Mobile Subscriber Identification Number (MSIN)
+		- Útoky
+			- Naivní – změna PINu u nezamčených telefonech.
+			- Klonování SIM – útočník, pokud se zmocní SIM a podaří se mu ji naklonovat, pak může přijímat SMS a hovory oběti (ta zůstane mimo dokud nenabootuje znovu), nyní existuje i služba MultiSIM format, kdy je možné využívat stejnou SIM ve více zařízeních.
+			- Extrahování Ki (výpočet z dostatečného počtu SRES odpovědí z A3  COMP128v1 algoritmu při autentizaci), COMP128v3 algoritmus se zdá odolnější.
+	- Secure Access Module SAM
+		- bezpečný přístupový (aplikační) modul.
+		- Rozšiřuje kryptografické funkce (generování klíčů, podpis, šifrování, ověřování) a jejich výkonost v jednodušších zařízení jako jsou komunikační brány, ověřovací terminály, smart metery atp. 
+		- Nabízí bezpečné úložiště pro hlavní a soukromé klíče. 
+		- Založen většinou na smart kartách (podobné HW a SW parametry).
+	- Secure Element SE
+		- zabezpečené úložiště dat v mobilních zařízeních, které by pomocí NFC mohli poskytovat stejné funkce jako bezkontaktní čip. karty.
+	- Trusted Platform Module (TPM)
+		- zabezpečený kryptoprocesor– čip, který je montován k základní desce u téměř většině počítačů, notebooků a i mnoha mobilů, set top boxů, konzolí atd
+		- Účel
+			- 
 
 
 
