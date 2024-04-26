@@ -462,8 +462,10 @@
 	- Realizace softwarové bezpečnosti
 		![[Pasted image 20240426105912.png]]
 	- Životní cyklus bezpečnosti SW (SDLC)
-		- 
-
+		![[Pasted image 20240426110459.png]]
+		![[Pasted image 20240426110519.png]]
+- Reverzní inženýrství a invazivní a neinvazivní útoky
+	- 
 
 
 
