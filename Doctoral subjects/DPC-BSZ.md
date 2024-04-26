@@ -465,7 +465,27 @@
 		![[Pasted image 20240426110459.png]]
 		![[Pasted image 20240426110519.png]]
 - Reverzní inženýrství a invazivní a neinvazivní útoky
-	- 
+	- Jedná se o proces, jehož cílem je odkrýt princip fungování zkoumaného předmětu (softwaru). 
+	- Rozšířená definice: Proces analýzy předmětného systému s cílem identifikovat komponenty systému a jejich vzájemné vazby a/nebo vytvořit reprezentaci systému v jiné formě nebo na vyšší úrovni abstrakce.
+		![[Pasted image 20240426110843.png]]
+	- Kompilace a dekompilace kódu
+		- Kompilátory: překlad kódu programu (vyššího jazyka) do strojového kódu (např. do binárního souboru). 
+		- Dekompilace je zpětné přeložení binárního kódu na výstup původního jazyka.
+		- Dissasembler překládá strojový kód do symbolického zápisu v assembleru. 
+		![[Pasted image 20240426111046.png]]
+		- Dekompilace
+			- Cílem je dekompilovat binární program na vyšší původní programovací jazyk za účelem jeho porozumění.
+			- Vstup: 
+				- Platformě závislý binární program. 
+				- Popis platformy. 
+			- Výstup: 
+				- Uniformní výstup v jazyku vyšší úrovně (např. C, JAVA). 
+				- Dissemblovanýkód. 
+				- Grafická prezentace (graf toku řízení a volání). 
+				- Statistiky. 
+			- Náročnost dekompilace je závislá nad použitou obfuskací a dodatečnou ochranou. 
+				- Jednoduší dekompilace se považuje u JAVA a #C, oproti C.
+			- 
 
 
 
