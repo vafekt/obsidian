@@ -439,7 +439,7 @@
 			- Bezpečnostní chyba v programu (bug) – dílčí programátorská chyba, která dále může zapříčinit zranitelnost a následně být zneužitelná útokem. 
 			- Kromě chyb se může jednat i o systémové chyby vycházející ze špatného návrhu, konfigurace atp. 
 			- Zranitelnost typu Zero-day (0-day) je označována jakákoliv doposud neznámá zranitelnost. Dokud není odstraněna (patch, update), tak útočník může tuto zranitelnost zneužívat.
-		- Klasifikace podle Red Hat a MS Windows:
+		- Klasifikace podle Red Hat a MS Windows: Vyhodnocení podle CVSS (verze 3)
 			- Minimální dopad (low) 
 				- zneužití je obtížné, nebo se jedná pouze o minimální dopad. 
 			- Průměrné (moderate)
@@ -451,8 +451,18 @@
 			- Kritické (critical)
 				- vzdálený útok, kdy se do systému dostane útočník zvenku,
 				- např. ohrožení síťovým červem bez účasti uživatele, umožnění backdoor,…
-			- 
-
+		- Jsou databáze a seznamy zranitelností pro nás
+			- CVE (CommonVulnerabilities and Exposures)
+			- CWE (Common Weaknesses Enumeration)
+			- NIST NVD (NATIONAL VULNERABILITY DATABASE)
+			- OSVDS (Open Source Vulnerability Database)
+	- Skupiny SW zranizelností
+		![[Pasted image 20240426090521.png]]
+		![[Pasted image 20240426091331.png]]
+	- Realizace softwarové bezpečnosti
+		![[Pasted image 20240426105912.png]]
+	- Životní cyklus bezpečnosti SW (SDLC)
+		- 
 
 
 
