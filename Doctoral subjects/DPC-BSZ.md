@@ -485,7 +485,30 @@
 				- Statistiky. 
 			- Náročnost dekompilace je závislá nad použitou obfuskací a dodatečnou ochranou. 
 				- Jednoduší dekompilace se považuje u JAVA a #C, oproti C.
-			- 
+			- Problém dekompilace
+				- Ztráta informací a metadat vlivem optimalizace (komentáře, makra, direktivy, typy, znaménkovost, vysokoúrovňové konstrukce, jména proměnných, jména funkcí atd.). 
+				- Přídavné ochrany: obfuskace kódu a binárky, anti-debugging ochrany.
+				- Mnoho programovacích jazyků a překladačů 
+					- Např. pro C: GCC, Clang, MSVC, ICC, … 
+				- Různá binární rozhraní (zarovnání datových typů, mnoho způsobů v asembleru jak udělat stejnou funkci).
+				- Různé souborové formáty
+			- Nástroje
+				![[Pasted image 20240426111709.png]]
+	- Ochrana proti zpětnému inženýrství
+		- Mezi obecné ochrany patří: 
+			- obfuskacekódu, 
+			- anti-debugging ochrany, 
+			- šifrování, 
+			- hardwarové klíče, 
+			- další kryptografické prostředky. 
+		- Typické vývojářské ochrany: 
+			- Obfuskacekódu: 
+				- změna jmen funkcí,  
+				- změna sekvencí kódu, extra skoky, 
+				- pseudopodmínky. 
+			- Injektacekódu. 
+				- přidání šumu – funkcí které nemají vliv (tzv. dummy). 
+			- Polymorfismy, sebe-modifikace, code morphing
 
 
 
