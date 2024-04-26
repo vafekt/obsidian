@@ -509,6 +509,10 @@
 			- Injektacekódu. 
 				- přidání šumu – funkcí které nemají vliv (tzv. dummy). 
 			- Polymorfismy, sebe-modifikace, code morphing
+	- Invazní a neinvazní útoky
+		![[Pasted image 20240426112024.png]]
+		![[Pasted image 20240426112047.png]]
+
 
 
 
