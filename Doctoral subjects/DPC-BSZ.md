@@ -417,7 +417,41 @@
 	- Vývoj v C, JAVA, asembleru, kompilace do MULTOS Executable Language (MEL)  - Reduced Instruction Set Computer (RISC)
 - Platforma BASIC Card a .NET Card
 7. Reverzní inženýrství a softwarová bezpečnost 
-- 
+- Softwarová bezpečnost
+	- Padá do oblasti Computer Security: se zabývá jak zajistit a udržovat požadované vlastnosti počítačových systémů v přítomnosti inteligentního útočníka snažící se ho o narušení vlastností.
+	- Softwarová bezpečnost patří do oboru počítačové bezpečnosti a zabývá se jak útočník může zneužít (exploitovat) program/SW systému a jak vývojář může zabránit zneužití (exploitů).
+	- Softwarové hrozby
+		- Malware– škodlivý SW který se snaží využít chyb jiného SW či OS a škodit v SW prostředí. Typicky se jedná o: 
+			- Počítačový červ – šíří se bez interakce uživatele. 
+			- Počítačový vir – škodí v OS, většinou je spuštěn uživatelem. 
+			- Ransomware–program snažící se vydírat uživatele s hrozbou smazání dat či jejich zašifrování. 
+			- Rootkit–sada programů které se snaží maskovat přítomnost zákeřného softwaru v počítači, skrývat procesy, soubory atd. 
+			- Backdoor–program/metoda umožňuje obejít běžnou autentizaci, která za běžných okolností brání uživateli v neoprávněném využívání počítačového systému. 
+			- Spyware–program detekující a přeposílající uživatelské data bez jeho vědomí, např. keylogger, adware, hijacker,dialers… 
+			- Trojský kůň – program/SW/soubor, který se jeví jako neškodný pro uživatele, ale ukrývá různé kombinace škodlivého malware jako je key logger, vir, červ, backdoor, ransomware, rootkit. 
+			- Logická bomba –kód, který je vložen do programu, který se spustí po splnění podmínek a má za cíl škodit (provést payload, např. smazat soubory).
+		- DoS
+		- DDoS
+		- Změna webového GUI na web grafiti
+	- Zranitelnosti a SW chyby pro zneužití
+		- Zranitelnosti (vulnerability) jsou v SW bezpečnosti vnímány jako slabiny v OS či konkrétním SW (desktopové aplikace, webové aplikace, systémové aplikace, aplikace na různých platformách), které může útočník zneužít pro napáchání škod
+		- Obecné typy zranitelností: 
+			- Bezpečnostní chyba v programu (bug) – dílčí programátorská chyba, která dále může zapříčinit zranitelnost a následně být zneužitelná útokem. 
+			- Kromě chyb se může jednat i o systémové chyby vycházející ze špatného návrhu, konfigurace atp. 
+			- Zranitelnost typu Zero-day (0-day) je označována jakákoliv doposud neznámá zranitelnost. Dokud není odstraněna (patch, update), tak útočník může tuto zranitelnost zneužívat.
+		- Klasifikace podle Red Hat a MS Windows:
+			- Minimální dopad (low) 
+				- zneužití je obtížné, nebo se jedná pouze o minimální dopad. 
+			- Průměrné (moderate)
+				- zneužití se zmírněno implicitním nastavením, obtížností, auditováním (záznamem operací), 
+				- k problému může dojít, ale jsme schopni ho včas detekovat a postarat se o včasný zásah. 
+			- Důležité (important) 
+				- ohrožení uživatelských dat nebo systémových prostředků, 
+				- například nám někdo nainstaluje do počítače malware, který začne rozesílat spam. 
+			- Kritické (critical)
+				- vzdálený útok, kdy se do systému dostane útočník zvenku,
+				- např. ohrožení síťovým červem bez účasti uživatele, umožnění backdoor,…
+			- 
 
 
 
