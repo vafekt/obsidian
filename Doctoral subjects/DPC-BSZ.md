@@ -512,7 +512,7 @@
 	- Invazní a neinvazní útoky
 		![[Pasted image 20240426112024.png]]
 		![[Pasted image 20240426112047.png]]
-
+		![[Pasted image 20240426112123.png]]
 
 
 
