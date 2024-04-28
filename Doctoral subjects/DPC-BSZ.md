@@ -524,7 +524,27 @@
 	- **Power Consumption:** The amount of power a device consumes during cryptographic operations (fluctuations in power usage might reveal information).
 	- **Electromagnetic Emissions:** Electromagnetic waves emitted by the device during processing (can be picked up by specialized equipment).
 	- **Acoustic Emissions:** Sounds produced by the device during cryptographic operations (extremely rare, but possible).
-	- 
+- Časová analýza (TA)
+	- Měření a analýza doby, která je potřebná k vykonání určitých operací v kryptografickém modulu
+	- Ten útok je realizovatelný když existuje souvislost mezi senzitivní informací (klíč) a dobou výpočtu
+	- Příklad:
+		- Algoritmu verifikaci hesla
+			![[Pasted image 20240428100126.png]]
+			![[Pasted image 20240428100748.png]]
+		- Implementace algoritmu RSA (modulární násobení)
+- Proudová analýza (PA) - základní princip
+	- Studuje proudovou spotřebu kryptogradického modulu v závislosti na jeho činnosti
+	- V dneční době představuje efektivní a úspěšný způsob útoku cílený na algoritmy AES nebo RSA
+	- Komplexní problematika obsahující měření proudové spotřeby, znalost kryptografických algoritmů, zpracování signálu, statistiku
+		![[Pasted image 20240428101826.png]]
+- Elektromagnetická analýza (EMA)
+	- Následkem nabíjení a vybíjení parazitní kapacity (invertor) vzniká v obvodu skoková změna proudu
+	- Projevující se emitací elektromagnetického pole
+- Akustická analýza
+	- Útoky na klávesy psacího stroje, tiskárna
+- Optická analýza
+	- Při změně stavu doje k vyzáří několik fotonů
+9. 
 
 
 
