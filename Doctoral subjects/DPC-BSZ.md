@@ -64,10 +64,10 @@
 2. Lehká kryptografie pro výpočetně a paměťově omezená zařízení
 - Metody lehké kryptografie
 	- Zařízení mohou být omezená
-		- Výpočetně(procesor jen několik MHz)
-		- Paměťově(jednotky – desítky KB RAM, EEPROM)
+		- Výpočetně (procesor jen několik MHz)
+		- Paměťově (jednotky – desítky KB RAM, EEPROM)
 		- V napájecím zdroji– baterie – omezená životnost. 
-		- Programově(omezené API v rámci OS, např. u čip. karet)
+		- Programově (omezené API v rámci OS, např. u čip. karet)
 		- Funkčně–absence např. časovače, TRNG, chybějící periferie
 	- Komunikační protokoly mohou být omezené
 		- Maximální délka přenášené zprávy. 
