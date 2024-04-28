@@ -28,7 +28,7 @@
 		- Hardwarová bezpečnost zabývá se chybami a útoky v hardwarové části počítačových systémů a možností ochran a detekcí útoků.
 		- Softwarová bezpečnost – oblast zabývající se jak útočník může využít/zneužít software a jak se bránit
 		- Síťová bezpečnost – zabývá se chybami a zranitelnostmi síťových protokolů, služeb a zařízení a navrhuje možná protiopatření, ochrany a detekce.
-	- TrustedPlatform Module (TPM)
+	- Trusted Platform Module (TPM)
 		- dedikovaný mikrokontrolér, který ukládá klíče a provádí kryptografické operace (šifrování, podpis, hash, …)
 		- Located in motherboard of PC
 		- provides secure storage that is exceptionally difficult to break because it is a separate component independent of the device’s operating system. So it is not vulnerable to any security risk in the OS itself or any software-based attacks. It is not vulnerable to physical attacks either; the TPM chip can tell if the hardware has been tampered with or removed and can be configured into a self-destruct mode against attacks.
