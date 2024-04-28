@@ -35,7 +35,7 @@
 		- According to Microsoft, TPM has been shown to reduce malware attacks by 60% on tested devices. With the TPM technology onboard, you can use it to store biometrics data and ditch passwords completely.
 	- Kryptoprocesor
 		- dedikovaný / pomocný procesor pro vykonání kryptografických funkcí.
-	- SecureAccess Module (SAM) – založen na SmartCard technologii, jeho úkolem je poskytnout kryptografické funkce (autentizace) a bezpečné uložiště (typicky velikost SIM)
+	- Secure Access Module (SAM) – založen na SmartCard technologii, jeho úkolem je poskytnout kryptografické funkce (autentizace) a bezpečné uložiště (typicky velikost SIM)
 	- Hardware Security Module (HSM) – výpočetní zařízení pro ukládání a správu klíčů pro silnou autentizaci, poskytuje i kryptografické operace.
 	- Postranní kanál nežádoucí způsob výměny informace mezi kryptografickým modulem a jeho okolím.
 		- Timing, energy, EM sniffing to attack.
