@@ -513,7 +513,8 @@
 		![[Pasted image 20240426112024.png]]
 		![[Pasted image 20240426112047.png]]
 		![[Pasted image 20240426112123.png]]
-8. 
+8. Postranní kanály - úvod do problematiky
+- 
 
 
 
