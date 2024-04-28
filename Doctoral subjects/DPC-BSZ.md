@@ -544,7 +544,8 @@
 	- Útoky na klávesy psacího stroje, tiskárna
 - Optická analýza
 	- Při změně stavu doje k vyzáří několik fotonů
-9. 
+9. Metodiky hodnocení bezpečnosti zařízení a systémů
+- 
 
 
 
