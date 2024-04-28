@@ -514,7 +514,17 @@
 		![[Pasted image 20240426112047.png]]
 		![[Pasted image 20240426112123.png]]
 8. Postranní kanály - úvod do problematiky
-- 
+- Definice
+	- A side-channel attack is a security exploit that targets information leakage from a system, rather than exploiting weaknesses in the cryptographic algorithm itself.
+	- Instead of focusing on breaking the encryption itself, side-channel attacks attempt to extract secret information (like encryption keys) by analyzing indirect emissions or behaviors of the system performing the encryption or decryption.
+- How the information leaks:
+	- The attacker studies the system's behavior to understand how it leaks information through side channels. This might involve setting up special equipment to monitor power consumption, electromagnetic emissions, or timing the execution of cryptographic operations.
+		- After measuring, they perform statistical analysis, and then extracting secrets (reconstructing the secret information)
+	- **Timing:** How long a cryptographic operation takes (e.g., encryption/decryption time might vary depending on the data being processed).
+	- **Power Consumption:** The amount of power a device consumes during cryptographic operations (fluctuations in power usage might reveal information).
+	- **Electromagnetic Emissions:** Electromagnetic waves emitted by the device during processing (can be picked up by specialized equipment).
+	- **Acoustic Emissions:** Sounds produced by the device during cryptographic operations (extremely rare, but possible).
+	- 
 
 
 
