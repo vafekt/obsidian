@@ -572,7 +572,25 @@
 		![[Pasted image 20240429160648.png]]
 		![[Pasted image 20240429160721.png]]
 10. Metodiky hodnocení bezpečnosti zařízení a systémů
-- 
+- Úvod do hodnocení bezpečnosti, normy
+	- Kybernetická bezpečnost: 
+		- Softwarová bezpečnost. 
+		- Počítačová bezpečnost - bezpečnost OS a dat. 
+		- Sítová bezpečnost - bezpečnost komunikačních protokolů a rozhraní. 
+		- Fyzická bezpečnost, přístupové a dohledové systémy. 
+		- Bezpečnost procesů a řízení bezpečnosti informací. 
+	- Hodnocení bezpečnosti by mělo korespondovat s předpisy a normami.
+- Procesní řízení bezpečnosti
+	![[Pasted image 20240429162622.png]]
+- Normy rodiny ISO/IEC 27K
+	![[Pasted image 20240429163105.png]]
+- Metodiky hodnocení bezpečnosti zařízení a systémů
+	- Common Criteria
+		![[Pasted image 20240429163312.png]]
+		![[Pasted image 20240429163359.png]]
+
+
+
 
 
 
