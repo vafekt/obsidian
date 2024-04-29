@@ -567,8 +567,12 @@
 			- SmartLock
 		- Šifrování souboru, disku
 		- Omezení přístupu uživatelům
-- Bezpečnost komunikačnách protokolů (WiFi, BLE, NFC)
-	- 
+- Bezpečnost komunikačnách protokolů (WiFi, BLE - Bluetooth Low Energy, NFC - Near Field Contact)
+		![[Pasted image 20240429160631.png]]
+		![[Pasted image 20240429160648.png]]
+		![[Pasted image 20240429160721.png]]
+10. Metodiky hodnocení bezpečnosti zařízení a systémů
+- 
 
 
 
