@@ -544,8 +544,31 @@
 	- Útoky na klávesy psacího stroje, tiskárna
 - Optická analýza
 	- Při změně stavu doje k vyzáří několik fotonů
-9. Metodiky hodnocení bezpečnosti zařízení a systémů
-- 
+9. Bezpečnost na chytrých zařízeních
+- Bezpečnost chytrých zařízení (smartphone, smartwatch, smartglasses, platforma Android).
+	- Android:
+		- Android je mobilní operační systém (OS) založený na Linuxovém jádře
+		- Vývoj v jazyce JAVA (Kotlin nebo C/C++ v NDK)
+	- Útoky
+		- Software
+			- Malicious applications with too much permissions
+			- Application elevating privileges
+			- Exploited vulnerable application or browser
+		- Physical attacks
+			- ADB enabled, can allow app with all permissions and extract data
+			- Dump with hardware technique
+	- Ochrana zařízení
+		- Autentizace
+			- Záměk obrazovky
+				- PIN
+				- heslo
+				- Otisk prstu
+				- Vzor
+			- SmartLock
+		- Šifrování souboru, disku
+		- Omezení přístupu uživatelům
+- Bezpečnost komunikačnách protokolů (WiFi, BLE, NFC)
+	- 
 
 
 
